@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html>
+<title>THE DEVELOPMENT OF BUS TICKET COMPARISO</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ed502d;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+h1,h2,h3,h5 {font-family: "Oswald"}
+h4,h6{font-family : "th SarabunPSK" font-size: 30px; }
+body {font-family: "Open Sans"}
+body,td,th {
+	font-family: "th SarabunPSK";
+	font-size: 20px;
+	font-weight: bold;
+}
+</style>
+<body class="w3-light-gray">
+
+<div class="topnav" id="myTopnav">
+  <a href="file:///C:/Users/sunie/OneDrive/%E0%B9%80%E0%B8%94%E0%B8%AA%E0%B8%81%E0%B9%8C%E0%B8%97%E0%B9%87%E0%B8%AD%E0%B8%9B/pjeastticket/BUSTICKETCOMPARISON.html" class="active">หน้าแรก</a>
+  <a href="http://home.transport.co.th/index.php/en/2014-12-16-07-11-38/%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B8%A3%E0%B8%96.html">มาตรฐานรถ</a>
+  <a href="file:///C:/Users/sunie/OneDrive/%E0%B9%80%E0%B8%94%E0%B8%AA%E0%B8%81%E0%B9%8C%E0%B8%97%E0%B9%87%E0%B8%AD%E0%B8%9B/pjeastticket/travel.html">สถานที่ท่องเที่ยวแนะนำ</a>
+  <a href="https://www.agoda.com/?pcs=1&cid=1824618&hl=en">จัดหาสถานที่พัก</a>
+  <a href="https://www.rentalcars.com/?affiliateCode=google&preflang=th&label=generic-LiDGYbEJ9my5X9cgc_JrmwS244489991189&ws=&ppc_placement=&ppc_target=&ppc_param1=&ppc_param2=&aceid=&adposition=1t1&ppc_network=g&feeditemid=&ppc_targetid=aud-96343247783:kwd-23636446669&loc_physical_ms=9074489&loc_interest_ms=&ppc_device=c&ppc_devicemodel=&gclid=Cj0KCQjw3uboBRDCARIsAO2XcYDV3XJN8n-Q17QlgdJ53qpABQIczZLCApZrg90foJ2YwvBwUfid_LYaAtoSEALw_wcB">จัดดหารถเช่า</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><strong></strong>THE DEVELOPMENT OF BUS TICKET COMPARISON</h1>
+    <h6>เว็บแอพพลิเคชั่นบริการเปรียบเทียบ<span class="w3-tag">ราคาตั๋วรถทัวร์ </span></h6>
+  </header>
+  
+	<div class="bgimg w3-display-container w3-text-white">
+  
+</div>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      
+      <div class="w3-container w3-white w3-margin w3-padding-large"><center>
+        <form action="file:///C:/Users/sunie/OneDrive/%E0%B9%80%E0%B8%94%E0%B8%AA%E0%B8%81%E0%B9%8C%E0%B8%97%E0%B9%87%E0%B8%AD%E0%B8%9B/pjeastticket/ticketbus.html" method="post" name="form1" target="_parent" class="fa" id="form1" onsubmit="return doSubmit(this);">
+					  <input type="hidden" name="appkey" value="f83956c5260d33981935c9e80d1a5a5d" />
+					  <input type="hidden" name="adult" value="1" />
+					  <input type="hidden" name="busstd" value="all" />
+          <table width="200" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="left"><table width="200" border="0" cellpadding="0" cellspacing="0">
+                              <tr>
+                                <td width="50" align="left">เดินทาง:</td>
+                        <td width="65"><label><input name="triptype" type="radio" value="roundtrip" checked onclick="return enableRdoOneWayRoundTrip(false)">ไป-กลับ</label></td>
+                        <td><label><input name="triptype" type="radio" value="oneway" onclick="return enableRdoOneWayRoundTrip(true)">เที่ยวเดียว</label></td>
+                      </tr>
+                              </table></td>
+                  </tr>
+          </table>                
+                  <table width="200" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td height="20" align="left"><span>จังหวัดต้นทาง:</span></td>
+                    </tr>
+                    <tr>
+                      <td align="left"><div align="left">
+                        <select name="departcity" id="departcity" onChange="dispterminal(this.value,'departterminal')" style="width:200px;font-family:Tahoma;font-size:12px;">
+                          <option value="">--กรุณาเลือก--</option>
+  <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option><option value="กระบี่">กระบี่</option><option value="กาญจนบุรี">กาญจนบุรี</option><option value="กาฬสินธุ์">กาฬสินธุ์</option><option value="กำแพงเพชร">กำแพงเพชร</option><option value="ขอนแก่น">ขอนแก่น</option><option value="จันทบุรี">จันทบุรี</option><option value="ฉะเชิงเทรา">ฉะเชิงเทรา</option><option value="ชลบุรี">ชลบุรี</option><option value="ชัยภูมิ">ชัยภูมิ</option><option value="ชุมพร">ชุมพร</option><option value="เชียงราย">เชียงราย</option><option value="เชียงใหม่">เชียงใหม่</option><option value="ตรัง">ตรัง</option><option value="ตราด">ตราด</option><option value="ตาก">ตาก</option><option value="นครนายก">นครนายก</option><option value="นครปฐม">นครปฐม</option><option value="นครพนม">นครพนม</option><option value="นครราชสีมา">นครราชสีมา</option><option value="นครศรีธรรมราช">นครศรีธรรมราช</option><option value="นครสวรรค์">นครสวรรค์</option><option value="นราธิวาส">นราธิวาส</option><option value="น่าน">น่าน</option><option value="บึงกาฬ">บึงกาฬ</option><option value="บุรีรัมย์">บุรีรัมย์</option><option value="ปทุมธานี">ปทุมธานี</option><option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์</option><option value="ปราจีนบุรี">ปราจีนบุรี</option><option value="พะเยา">พะเยา</option><option value="พังงา">พังงา</option><option value="พัทลุง">พัทลุง</option><option value="พิษณุโลก">พิษณุโลก</option><option value="เพชรบุรี">เพชรบุรี</option><option value="เพชรบูรณ์">เพชรบูรณ์</option><option value="แพร่">แพร่</option><option value="ภูเก็ต">ภูเก็ต</option><option value="มหาสารคาม">มหาสารคาม</option><option value="มุกดาหาร">มุกดาหาร</option><option value="แม่ฮ่องสอน">แม่ฮ่องสอน</option><option value="ยโสธร">ยโสธร</option><option value="ร้อยเอ็ด">ร้อยเอ็ด</option><option value="ระนอง">ระนอง</option><option value="ระยอง">ระยอง</option><option value="ราชบุรี">ราชบุรี</option><option value="ลำปาง">ลำปาง</option><option value="ลำพูน">ลำพูน</option><option value="เลย">เลย</option><option value="ศรีสะเกษ">ศรีสะเกษ</option><option value="สกลนคร">สกลนคร</option><option value="สงขลา">สงขลา</option><option value="สตูล">สตูล</option><option value="สมุทรสาคร">สมุทรสาคร</option><option value="สระแก้ว">สระแก้ว</option><option value="สระบุรี">สระบุรี</option><option value="สุโขทัย">สุโขทัย</option><option value="สุราษฎร์ธานี">สุราษฎร์ธานี</option><option value="สุรินทร์">สุรินทร์</option><option value="หนองคาย">หนองคาย</option><option value="หนองบัวลำภู">หนองบัวลำภู</option><option value="อำนาจเจริญ">อำนาจเจริญ</option><option value="อุดรธานี">อุดรธานี</option><option value="อุตรดิตถ์">อุตรดิตถ์</option><option value="อุบลราชธานี">อุบลราชธานี</option>  
+                        </select>
+                        </div>  </td>
+                    </tr>
+                    <tr>
+                      <td height="20" align="left"><span>จุดขึ้นรถ:</span></td>
+                    </tr>
+                    <tr>
+                      <td align="left">
+                        <div ID="departterminaldisp" align="left"><select name="departterminal" id="departterminal" style="width:200px;font-family:Tahoma;font-size:11px;" onChange="getreturncity('');">
+                          <option value="">--กรุณาเลือก--</option>
+                          <option value="กระบี่">จุดจอด อ.คลองท่อม</option>
+<option value="กระบี่">สถานีขนส่งผู้โดยสาร จ.กระบี่</option>
+<option value="กรุงเทพมหานคร">สถานีขนส่งผู้โดยสารกรุงเทพฯ (หมอชิต 2)</option>
+<option value="กรุงเทพมหานคร">สถานีขนส่งผู้โดยสารกรุงเทพฯ (ถนนบรมราชชนนี)</option>
+<option value="กรุงเทพมหานคร">สำนักงานสหพันธ์ร้อยเอ็ดทัวร์วิภาวดี</option>
+<option value="กรุงเทพมหานคร">สำนักงานสมบัติทัวร์วิภาวดี</option>
+<option value="กรุงเทพมหานคร">สถานีขนส่งผู้โดยสารกรุงเทพฯ (รังสิต)</option>
+<option value="กรุงเทพมหานคร">สถานีขนส่งผู้โดยสารกรุงเทพฯ (เอกมัย)</option>
+<option value="กรุงเทพมหานคร">ท่าอากาศยานสุวรรณภูมิ</option>
+<option value="กรุงเทพมหานคร">สถานีซันบัส</option>
+<option value="กรุงเทพมหานคร">ออฟฟิศ 407 พัฒนา รังสิต</option>
+<option value="กรุงเทพมหานคร">ฟิวเจอร์ปาร์ครังสิต</option>
+<option value="กรุงเทพมหานคร">สำนักงานษุษราคัมทัวร์ (รังสิต) ถัดจากแม็คโคร 300 ม.</option>
+<option value="กาญจนบุรี">สถานีขนส่งผู้โดยสาร จ.กาญจนบุรี</option>
+<option value="กาญจนบุรี">จุดจอด อ.กุฉินารายณ์</option>
+<option value="กาญจนบุรี">สถานีขนส่งผู้โดยสาร จ.กาฬสินธุ์</option>
+<option value="กาญจนบุรี">จุดจอดติดป้อมตำรวจ สี่แยกไฟแดง อ.สมเด็จ</option>
+<option value="กาญจนบุรี">จุดจอด อ.ท่าคันโท</option>
+<option value="กาญจนบุรี">จุดจอดสามแยกห้วยเม็ก</option>
+<option value="กาญจนบุรี">จุดจอด อ.หนองกุงศรี</option>
+<option value="กำแพงเพชร">สถานีขนส่งผู้โดยสาร จ.กำแพงเพชร</option>
+<option value="กำแพงเพชร">จุดจอด ต.สลกบาตร</option>
+<option value="ขอนแก่น">สถานีขนส่งผู้โดยสาร อ.พล</option>
+<option value="ขอนแก่น">สถานีขนส่งผู้โดยสาร จ.ขอนแก่น</option>
+<option value="ขอนแก่น">จุดจอด อ.แวงใหญ่</option>
+<option value="ขอนแก่น">จุดจอด อ.พระยืน</option>
+<option value="ขอนแก่น">จุดจอด ต.ท่าศาลา</option>
+<option value="ขอนแก่น">จุดจอด อ.มัญจาคีรี</option>
+<option value="ขอนแก่น">จุดจอด อ.ชนบท</option>
+<option value="ขอนแก่น">สถานีขนส่งผู้โดยสาร อ.ชุมแพ</option>
+<option value="ขอนแก่น">จุดจอด อ.บ้านไผ่</option>
+<option value="ขอนแก่น">สำนักงานอีสานทัวร์ขอนแก่น</option>
+<option value="จันทบุรี">สำนักงานพรนิภาทัวร์ จ.จันทบุรี</option>
+<option value="จันทบุรี">สถานีขนส่งผู้โดยสาร จ.จันทบุรี</option>
+<option value="ฉะเชิงเทรา">จุดจอด ต.เขาหินซ้อน</option>
+<option value="ฉะเชิงเทรา">สถานีขนส่งผู้โดยสาร จ.ฉะเชิงเทรา</option>
+<option value="ชลบุรี">ท่าพัทยา</option>
+<option value="ชลบุรี">สำนักงานสวัสดีทั่วไทย พัทยา</option>
+<option value="ชลบุรี">สถานีขนส่งผู้โดยสาร จ.ชลบุรี</option>
+<option value="ชลบุรี">ท่าชลบุรี</option>
+<option value="ชลบุรี">ท่าแหลมฉบัง</option>
+<option value="ชัยภูมิ">จุดจอด ต.โนนจาน</option>
+<option value="ชัยภูมิ">จุดจอด ต.ละหาน</option>
+<option value="ชัยภูมิ">สถานีขนส่งผู้โดยสาร จ.ชัยภูมิ</option>
+<option value="ชัยภูมิ">จุดจอด ต.บ้านค่าย</option>
+<option value="ชัยภูมิ">บริษัท เทียนไชยแอร์ จำกัด</option>
+<option value="ชัยภูมิ">จุดจอด อ.จตุรัส</option>
+<option value="ชัยภูมิ">บริษัท ซันบัส จำกัด</option>
+<option value="ชัยภูมิ">จุดจอด อ.คอนสาร</option>
+<option value="ชัยภูมิ">จุดจอดบ้านแปรง</option>
+<option value="ชัยภูมิ">จุดจอด ต.หนองบัวโคก</option>
+<option value="ชัยภูมิ">บริษัท แอร์ชัยภูมิ จำกัด</option>
+<option value="ชัยภูมิ">จุดจอดแก้งคร้อ</option>
+<option value="ชัยภูมิ">จุดจอดภูเขียว</option>
+<option value="ชุมพร">จุดจอดสี่แยกปฐมพร</option>
+<option value="ชุมพร">จุดจอดรุ่งกิจทัวร์หลังตลาดชุมพร</option>
+<option value="ชุมพร">สถานีขนส่งผู้โดยสารปฐมพร(ขนส่ง จ.ชุมพร)</option>
+<option value="ชุมพร">สำนักงานสุวรรณนทีขนส่ง (อ.เมืองชุมพร)</option>
+<option value="ชุมพร">สำนักงานสุวรรณนทีขนส่ง (อ.ละแม)</option>
+<option value="ชุมพร">สำนักงานสุวรรณนทีขนส่ง ( อ.หลังสวน)</option>
+<option value="ตรัง">บริษัทศรีตรัง (หน้าบขส.ตรัง)</option>
+<option value="ตรัง">สถานีขนส่งผู้โดยสาร จ.ตรัง</option>
+<option value="ตราด">สถานีขนส่งผู้โดยสาร จ.ตราด</option>
+<option value="ตาก">สถานีขนส่งผู้โดยสาร อ .แม่สอด</option>
+<option value="ตาก">สถานีขนส่งผู้โดยสาร จ.ตาก</option>
+<option value="ตาก">ท่ารถเพชรทัวร์ แม่สอด</option>
+<option value="นครนายก">จุดจอด อ.บ้านนา</option>
+<option value="นครนายก">สถานีขนส่งผู้โดยสาร จ.นครนายก</option>
+<option value="นครนายก">จุดจอด อ.องครักษ์</option>
+<option value="นครปฐม">จุดจอดประกิจยนต์ นครปฐม</option>
+<option value="นครปฐม">สถานีขนส่งผู้โดยสาร อ.ธาตุพนม</option>
+<option value="นครพนม">สถานีขนส่งผู้โดยสาร จ.นครพนม</option>
+<option value="นครราชสีมา">สถานีขนส่งผู้โดยสาร จ.นครราชสีมา</option>
+<option value="นครราชสีมา">จุดจอด อ.ด่านขุนทด</option>
+<option value="นครราชสีมา">จุดจอดอ.สีดา</option>
+<option value="นครราชสีมา">ปากช่อง</option>
+<option value="นครศรีธรรมราช">สถานีขนส่งผู้โดยสาร อ.ปากพนัง"</option>
+<option value="นครศรีธรรมราช">สถานีขนส่งผู้โดยสาร จ.นครศรีธรรมราช" </option>
+<option value="นครศรีธรรมราช">สนามบินนครศรีธรรมราช" </option>
+<option value="นครศรีธรรมราช">จุดจอดจันดี" </option>
+<option value="นครศรีธรรมราช">Airport Van ทุ่งสง"</option>
+<option value="นครศรีธรรมราช">จุดจอดแยกสวนผัก/ตลาดใหม่" </option>
+<option value="นครศรีธรรมราช">จุดจอดแยกร่อนพิบูลย์" </option>
+<option value="นครศรีธรรมราช">จุดจอดรถตลาดไม้หลา" </option>
+<option value="นครศรีธรรมราช">จุดจอดแยกนาพรุ" </option>
+<option value="นครศรีธรรมราช">สถานีขนส่งผู้โดยสาร อ.ทุ่งสง"</option>
+<option value="นครศรีธรรมราช">จุดจอด อ.ขนอม" </option>
+<option value="นครศรีธรรมราช">จุดจอด อ.เชียรใหญ่" </option>
+<option value="นครศรีธรรมราช">จุดจอดบ้านบ่อล้อ" </option>
+<option value="นครศรีธรรมราช">ลานสกา" </option>
+<option value="นครศรีธรรมราช">วัดมะนาวหวาน" </option>
+<option value="นครสวรรค์">สถานีขนส่งผู้โดยสาร จ.นครสวรรค์"</option>
+<option value="นราธิวาส">สถานีขนส่งผู้โดยสาร อ.สุไหงโกลก" </option>
+<option value="น่าน">สถานีขนส่งผู้โดยสาร จ.น่าน" </option>
+<option value="น่าน">จุดจอดเวียงสา" </option>
+<option value="น่าน">จุดจอด อ.ทุ่งช้าง" </option>
+<option value="น่าน">จุดจอด อ.ท่าวังผา"</option>
+<option value="น่าน">จุดจอด อ.ปัว" </option>
+<option value="บึงกาฬ">สถานีขนส่งผู้โดยสาร จ.บึงกาฬ"</option>
+<option value="บึงกาฬ">จุดจอด อ.บุ่งคล้า" </option>
+<option value="บึงกาฬ">จุดจอด อ.พรเจริญ" </option>
+<option value="บึงกาฬ">บริษัทสวัสดีอีสาน" </option>
+<option value="บึงกาฬ">จุดจำหน่ายตั๋วปากคาด" </option>
+<option value="บึงกาฬ">จุดจอด อ.ศรีวิไล" </option>
+<option value="บึงกาฬ">จุดจอด อ.โซ่พิสัย" </option>
+<option value="บุรีรัมย์">จุดจอดหนองกี่" </option>
+<option value="บุรีรัมย์">จุดจอดนางรอง" </option>
+<option value="บุรีรัมย์">จุดจอดประโคนชัย" </option>
+<option value="ปทุมธานี">จุดจอดรังสิต" </option>
+<option value="ปทุมธานีจุดจอดนวนคร" </option>
+<option value="ประจวบคีรีขันธ์">จุดจอดประกิจยนต์หัวหิน" </option>
+<option value="ประจวบคีรีขันธ์">จุดจอด อ.หัวหิน" </option>
+<option value="ประจวบคีรีขันธ์">จุดจอดศูนย์บริการทางหลวงเขาโพธิ์" </option>
+<option value="ประจวบคีรีขันธ์">จุดจอดประจวบคีรีขันธ์" </option>
+<option value="ประจวบคีรีขันธ์">จุดจอดชะอำ" </option>
+<option value="ปราจีนบุรี">จุดจอดแยกปราจีน" </option>
+<option value="ปราจีนบุรี">จุดจอด อ.ประจันตคาม"</option>
+<option value="ปราจีนบุรี">สถานีขนส่งผู้โดยสาร อ.กบินทร์บุรี"</option>
+<option value="พะเยา">จุดจอดมหาวิทยาลัยนเรศวร(พะเยา)" </option>
+<option value="พะเยา">สถานีขนส่งผู้โดยสาร จ.พะเยา" </option>
+<option value="พะเยา">จุดจอด อ.แม่ใจ" </option>
+<option value="พังงา">สถานีขนส่งผู้โดยสาร จ.พังงา" </option>
+<option value="พังงา">สถานีขนส่งผู้โดยสาร อ.ตะกั่วป่า" </option>
+<option value="พัทลุง">ท่ามิหรำ (โคนมเก่า)" </option>
+<option value="พัทลุง">สถานีขนส่งผู้โดยสาร จ.พัทลุง" </option>
+<option value="พิษณุโลก">สถานีขนส่งผู้โดยสาร จ.พิษณุโลก" </option>
+<option value="พิษณุโลก">จุดจอด อ.ทรัพย์ไพรวัลย์" </option>
+<option value="พิษณุโลก">จุดจอดวังทอง" </option>
+<option value="พิษณุโลก">จุดจอดบ้านแยง" </option>
+<option value="พิษณุโลก">จุดจอดค่ายสฤษดิ์" </option>
+<option value="พิษณุโลก">สถานีขนส่งใหม่ พิษณุโลก"</option>
+<option value="พิษณุโลก">จุดจอด ม.นเรศวร" </option>
+<option value="พิษณุโลก">สำนักงานพิษณุโลกยานยนต์ (ถนนพิชัยสงคราม)" </option>
+<option value="ภูเก็ต">สถานีขนส่งผู้โดยสาร จ.ภูเก็ต"</option>
+<option value="ภูเก็ต">จุดจอดสี่แยกราชภัฏภูเก็ต" </option>
+<option value="มหาสารคาม">สถานีขนส่งผู้โดยสาร จ.มหาสารคาม" </option>
+<option value="มหาสารคาม">สำนักงานรุ่งประเสริฐ (มหาสารคาม)" </option>
+<option value="มหาสารคาม">อ.เชียงยืน" </option>
+<option value="มุกดาหาร">สถานีขนส่งผู้โดยสาร จ.มุกดาหาร" </option>
+<option value="มุกดาหาร">จุดจอด อ.นิคมคำสร้อย"</option>
+<option value="ยโสธร">จุดจอดค้อวัง" </option>
+<option value="ยโสธร">สถานีขนส่งผู้โดยสาร จ.ยโสธร" </option>
+<option value="ยโสธร">จุดจอดเลิงนกทาเก่า" </option>
+<option value="ยโสธร">จุดจอด อ.ทรายมูล" </option>
+<option value="ยโสธร">จุดจอด อ.กุดชุม" </option>
+<option value="ยโสธร">จุดจอด ต.คำเตย"</option>
+<option value="ยโสธร">จุดจอดภูกลอย" </option>
+<option value="ยโสธร">จุดจอดห้วยสะแบก" </option>
+<option value="ยโสธร">จุดจอดเลิงนกทาใหม่" </option>
+<option value="ยโสธร">จุดจอด อ.ป่าติ้ว" </option>
+<option value="ร้อยเอ็ด">สถานีขนส่งผู้โดยสาร จ.ร้อยเอ็ด" </option>
+<option value="ร้อยเอ็ด">จุดจอด อ.เสลภูมิ" </option>
+<option value="ร้อยเอ็ด">สถานีขนส่งผู้โดยสาร อ.สุวรรณภูมิ"</option>
+<option value="ร้อยเอ็ด">จุดจอดเกษตรวิสัย"</option>
+<option value="ร้อยเอ็ด">จุดจอดบ้านหัวนา" </option>
+<option value="ระนอง">ศูนย์บริการลูกค้ารุ่งกิจทัวร์ จ.ระนอง" </option>
+<option value="ระนอง">สถานีขนส่งผู้โดยสาร จ.ระนอง" </option>
+<option value="ระยอง">ท่าระยอง" </option>
+<option value="ระยอง">ท่ามาบตาพุด"</option>
+<option value="ระยอง">ท่า อ.แกลง" </option>
+<option value="ระยอง">จุดจอด อ.บ้านฉาง" </option>
+<option value="ระยอง">สถานีขนส่งผู้โดยสาร จ.ระยอง (ใหม่)" </option>
+<option value="ระยอง">สำนักงานระยองทัวร์" </option>
+<option value="ราชบุรี">จุดจอดประกิจยนต์ ราชบุรี" </option>
+<option value="ราชบุรี">สวนผึ้ง" </option>
+<option value="ลำปาง">สถานีขนส่งผู้โดยสาร จ.ลำปาง"</option>
+<option value="ลำปาง">จุดจอด อ.งาว" </option>
+<option value="ลำพูน">จุดจอดแยกดอยติ"</option>
+<option value="ศรีสะเกษ">สถานีขนส่งผู้โดยสาร จ.ศรีสะเกษ" </option>
+<option value="ศรีสะเกษ">จุดจอดยางชุมน้อย"</option>
+<option value="ศรีสะเกษ">อ.บึงบูรพ์" </option>
+<option value="ศรีสะเกษ">จุดจอดกันทรลักษ์" </option>
+<option value="ศรีสะเกษ">จุดจอด อ.อุทุมพร" </option>
+<option value="ศรีสะเกษ">จุดจอด อ.ห้วยทับทัน" </option>
+<option value="สกลนคร">สถานีขนส่งผู้โดยสาร จ.สกลนคร" </option>
+<option value="สกลนคร">จุดจอด อ.พังโคน" </option>
+<option value="สกลนคร">จุดจอด อ.นิคมน้ำอูน" </option>
+<option value="สกลนคร">จุดจอด อ.วานรนิวาส" </option>
+<option value="สกลนคร">จุดจอดคำตากล้า" </option>
+<option value="สกลนคร">จุดจอด อ.สว่างแดนดิน" </option>
+<option value="สงขลา">สถานีขนส่งผู้โดยสาร อ.หาดใหญ่"</option>
+<option value="สงขลา">จุดจอด อ.ด่านนอก" </option>
+<option value="สงขลา">สถานีขนส่งผู้โดยสาร จ.สงขลา"</option>
+<option value="สตูล">สถานีขนส่งผู้โดยสาร จ.สตูล" </option>
+<option value="สมุทรสาคร">จุดจอดมหาชัย" </option>
+<option value="สระบุรี">จุดจอด อ.วิหารแดง" </option>
+<option value="สระบุรี">จุดจอด อ.หินกอง"</option>
+<option value="สระบุรี">สถานีขนส่งผู้โดยสาร จ.สระบุรี"</option>
+<option value="สระแก้ว">จุดจอด ต.ศาลาลำดวน" </option>
+<option value="สระแก้ว">จุดจอด ต.หนองกุง"</option>
+<option value="สระแก้ว">สถานีขนส่งผู้โดยสาร อ.อรัญประเทศ" </option>
+<option value="สระแก้ว">จุดจอด อ.วัฒนานคร" </option>
+<option value="สระแก้ว">จุดจอด ต.บ้านแก้ง" </option>
+<option value="สระแก้ว">สถานีขนส่งผู้โดยสาร จ.สระแก้ว"</option>
+<option value="สระแก้ว">จุดจอดตลาดโรงเกลือ" </option>
+<option value="สุราษฎร์ธานี">สถานีขนส่งผู้โดยสาร จ.สุราษฎร์ธานี" </option>
+<option value="สุราษฎร์ธานี">สหกรณ์สุราษฎร์ธานี จำกัด" </option>
+<option value="สุรินทร์">อ.รัตนบุรี" </option>
+<option value="สุรินทร์">จุดจอดปราสาท"</option>
+<option value="สุรินทร์">จุดจอด อ.สำโรงทาบ" </option>
+<option value="สุรินทร์">สถานีขนส่งผู้โดยสาร จ.สุรินทร์" </option>
+<option value="สุรินทร์">จุดจอด อ.ศีขรภูมิ" </option>
+<option value="สุโขทัย">สถานีขนส่งผู้โดยสาร จ.สุโขทัย"</option>
+<option value="หนองคาย">จุดจอด อ.ศรีเชียงใหม่" </option>
+<option value="หนองคาย">จุดจอด อ.สังคม" </option>
+<option value="หนองคาย">สถานีขนส่งผู้โดยสาร จ.หนองคาย"</option>
+<option value="หนองคาย">จุดจอดท่าบ่อ" </option>
+<option value="หนองคาย">จุดจอดโพนทอง" </option>
+<option value="หนองคาย">จุดจำหน่ายตั๋วรัตนวาปี"</option>
+<option value="หนองคาย">จุดจำหน่ายตั๋วโพนพิสัย" </option>
+<option value="หนองคาย">จุดจอด อ.เฝ้าไร่" </option>
+<option value="หนองบัวลำภู">จุดจอดหนองบัวลำภู" </option>
+<option value="หนองบัวลำภู">จุดจอดสุวรรณคูหา"</option>
+<option value="หนองบัวลำภู">สถานีขนส่งผู้โดยสาร จ.หนองบัวลำภู" </option>
+<option value="หนองบัวลำภู">จุดจอดนากลาง" </option>
+<option value="หนองบัวลำภู">จุดจอดนาวัง" </option>
+<option value="อำนาจเจริญ">สถานีขนส่งผู้โดยสาร จ.อำนาจเจริญ" </option>
+<option value="อำนาจเจริญ">จุดจอด ต.เสนางคนิคม"</option>
+<option value="อำนาจเจริญ">จุดจอด อ.ปทุมราชวงศา"</option>
+<option value="อำนาจเจริญ">จุดจอด อ.ประทุมราช" </option>
+<option value="อุดรธานี">สถานีขนส่งผู้โดยสาร จ.อุดรธานี" </option>
+<option value="อุดรธานี">สถานีขนส่งผู้โดยสาร จ.อุดรธานี แห่งที่ 2"</option>
+<option value="อุดรธานี">จุดจอดเซ็นทรัลอุดรธานี" </option>
+<option value="อุดรธานี">จุดจอด อ.น้ำโสม" </option>
+<option value="อุดรธานี">จุดจอด อ.บ้านผือ" </option>
+<option value="อุดรธานี">จุดจอดบ้านกลางใหญ่" </option>
+<option value="อุดรธานี">จุดจอดแยกสามเหลี่ยม"</option>
+<option value="อุดรธานี">จุดจอด อ.นายูง"</option>
+<option value="อุดรธานี">จุดจอด อ.บ้านดุง" </option>
+<option value="อุดรธานี">จุดจอดหนองเม็ก" </option>
+<option value="อุตรดิตถ์">สถานีขนส่งผู้โดยสาร จ.อุตรดิตถ์"</option>
+<option value="อุบลราชธานี">สถานีขนส่งผู้โดยสาร จ.อุบลราชธานี"</option>
+<option value="อุบลราชธานี">จุดจอดบ้านกอก" </option>
+<option value="อุบลราชธานี">จุดจอดบ้านแคน" </option>
+<option value="อุบลราชธานี">จุดจอดเขื่องใน" </option>
+<option value="อุบลราชธานี">จุดจอดธาตุน้อย" </option>
+<option value="อุบลราชธานี">จุดจอดช่องเม็ก"</option>
+<option value="อุบลราชธานี">จุดจอดเดชอุดม" </option>
+<option value="อุบลราชธานี">จุดจอดพิบูลมังสาหาร" </option>
+<option value="อุบลราชธานี">จุดจอดบ้านคันพระลาน" </option>
+<option value="อุบลราชธานี">จุดจอดบ้านบก" </option>
+<option value="อุบลราชธานี">จุดจอดบ้านไทรงาม"</option>
+<option value="อุบลราชธานี">จุดจอด อ.เขมราฐ"</option>
+<option value="อุบลราชธานี">จุดจอด อ.หนองผือ" </option>
+<option value="อุบลราชธานี">จุดจอดบุณฑริก" </option>
+<option value="อุบลราชธานี">จุดจอดปากแซง" </option>
+<option value="อุบลราชธานี">จุดจอด อ.โพธิ์ไทร" </option>
+<option value="เชียงราย">สถานีขนส่งผู้โดยสาร จ.เชียงราย" </option>
+<option value="เชียงราย">สถานีขนส่งผู้โดยสาร อ.แม่สาย" </option>
+<option value="เชียงราย">สำนักงานสมบัติทัวร์ อ.เชียงของ"</option>
+<option value="เชียงราย">จุดจอด งาว" </option>
+<option value="เชียงราย">จุดจอด อ.พาน" </option>
+<option value="เชียงราย">จุดจอดบ้านดู่"</option>
+<option value="เชียงราย">จุดจอดแม่ฟ้าหลวง" </option>
+<option value="เชียงราย">จุดจอด อ.แม่จัน" </option>
+<option value="เชียงราย">จุดจอดห้วยไคร้" </option>
+<option value="เชียงใหม่">สถานีขนส่งผู้โดยสาร จ.เชียงใหม่ (อาเขต)" </option>
+<option value="เชียงใหม่">จุดจอด อ.แม่มาลัย" </option>
+<option value="เชียงใหม่">จุดจอด อ.สบเปิง" </option>
+<option value="เชียงใหม่">จุดจอด อ.ป่าแป๋" </option>
+<option value="เชียงใหม่">จุดจอด อ.แม่เลา อ.แม่แสะ" </option>
+<option value="เชียงใหม่">จุดจอด อ.สันป่าตอง" </option>
+<option value="เชียงใหม่">จุดจอด อ.จอมทอง" </option>
+<option value="เชียงใหม่">จุดจอด อ.ฮอด"</option>
+<option value="เชียงใหม่">จุดจอด อ.แม่แจ่ม" </option>
+<option value="เชียงใหม่">จุดจอด อ.อมก๋อย บ่อหลวง กิ่วลม" </option>
+<option value="เชียงใหม่">จุดจอด ม.แม่สนาม" </option>
+<option value="เชียงใหม่">จุดจอด อ.บ่อสลี่ กองลอย" </option>
+<option value="เชียงใหม่">จุดจอด อ.แม่แสะ" </option>
+<option value="เชียงใหม่">สำนักงานนิววิริยะยานยนต์ทัวร์ (บ้านท่าตอน)" </option>
+<option value="เพชรบุรี">จุดจอดเพชรบุรี" </option>
+<option value="เพชรบูรณ์">ท่ารถเพชรทัวร์ หล่มสัก" </option>
+<option value="เพชรบูรณ์">สถานีขนส่งผู้โดยสาร อ.หล่มสัก" </option>
+<option value="เพชรบูรณ์">จุดจอด อ.น้ำหนาว"</option>
+<option value="เพชรบูรณ์">จุดจอดแคมป์สน" </option>
+<option value="เพชรบูรณ์">จุดจอดเข็กน้อย" </option>
+<option value="เลย">สถานีขนส่งผู้โดยสารจังหวัดเลย"</option>
+<option value="เลย">จุดจอด อ.ปากชม" </option>
+<option value="เลย">จุดจอดท่าลี่" </option>
+<option value="เลย">เชียงคาน" </option>
+<option value="เลย">ท่าภูเรือ" </option>
+<option value="เลย">ท่าด่านซ้าย" </option>
+<option value="เลย">จุดจอดผานกเค้า"</option>
+<option value="เลย">จุดจอดภูกระดึง" </option>
+<option value="เลย">จุดจอดบ้านธาตุ" </option>
+<option value="เลย">จุดจอดหนองหิน" </option>
+<option value="เลย">วังสะพุง" </option>
+<option value="แพร่">จุดจอด อ.เด่นชัย" </option>
+<option value="แพร่">จุดจอด อ.ร้องกวาง"</option>
+<option value="แพร่">สถานีขนส่งผู้โดยสาร จ.แพร่"</option>
+<option value="แพร่">จุดจอด อ.สอง" </option>
+<option value="แม่ฮ่องสอน">สถานีขนส่งผู้โดยสาร จ.แม่ฮ่องสอน" </option>
+<option value="แม่ฮ่องสอน">จุดจอด อ. ปาย"</option>
+<option value="แม่ฮ่องสอน">จุดจอด อ.แม่สะเรียง"</option>
+<option value="แม่ฮ่องสอน">จุดจอด อ.ขุนยวม" </option>
+<option value="แม่ฮ่องสอน">จุดจอด อ.ปางมะผ้า สบป่อง" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ห้วยน้ำดัง ม.ศาลามูเซอ" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.แม่ปิง " </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ทรายงาม"</option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ปางแปก กิ่วลม" </option>
+<option value="แม่ฮ่องสอน">จุดจอด อ.น้ำริน"</option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.แม่ลานา" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.น้ำแข็ง น้ำกัด แม่สุยะ"</option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ห้วยสะลอบ"</option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ห้วยผา ถ้ำปลา" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ท่าป่าส้าน" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ปางหมู" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ห้วยกุ้ง แม่ลาย แม่เหาะ" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ท่าผาบุ้ม แม่เตี๊ย ทุ่งรวงทอง" </option>
+<option value="แม่ฮ่องสอน">จุดจอด อ.แม่ลาน้อย" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.แม่ปาง"</option>
+<option value="แม่ฮ่องสอน">จุดจอด อ.แม่ลาหลวง แม่สุ" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.แม่โถ" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.หนองแห้ง ท่าหินส้ม" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.หางปอน เมืองปอน"</option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.แม่สุรินทร์"</option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ห้วยโป่ง แม่จ๋า" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ป่าลาน" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ห้วยโป่งการ" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ทุ่งรวงทอง" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.แม่เหาะ" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ศาลามูเซอ" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.กิ่วลม" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.แม่สุยะ" </option>
+<option value="นราธิวาส">สถานีขนส่งผู้โดยสาร จ.นราธิวาส"</option> 
+<option value="นราธิวาส">สถานีขนส่งผู้โดยสาร อ.ตากใบ"</option>
+<option value="นราธิวาส">สถานีขนส่งผู้โดยสาร อ.สุไหงโกลก"</option>
+<option value="นราธิวาส">จุดจอดต้นไทร"</option>
+<option value="นราธิวาส">จุดจอด อ.บาเจาะ"</option>
+<option value="นราธิวาส">จุดจอดยี่ง้อ"</option>
+<option value="นราธิวาส">จุดจอดกะลาพอ"</option>
+<option value="นราธิวาส">จุดจอดมะนังดาลำ"</option>
+<option value="น่าน">จุดจอด อ.ปัว"</option>
+<option value="น่าน">จุดจอด อ.ท่าวังผา"</option>
+<option value="น่าน">สถานีขนส่งผู้โดยสาร จ.น่าน"</option>
+<option value="น่าน">จุดจอด อ.ทุ่งช้าง"</option>
+<option value="บึงกาฬ">สถานีขนส่งผู้โดยสาร จ.บึงกาฬ"</option>
+<option value="บึงกาฬ">จุดจอด อ.ศรีวิไล"</option> 
+<option value="บึงกาฬ">จุดจอดดอนหญ้านาง"</option>
+<option value="บึงกาฬ">จุดจอด อ.พรเจริญ"</option>
+<option value="บึงกาฬ">จุดจอด อ.บุ่งคล้า"</option>
+<option value="บึงกาฬ">จุดจอด อ.ปากคาด"</option>
+<option value="บึงกาฬ">จุดจอดเซกา"</option>
+<option value="บึงกาฬ">จุดจอด อ.โซ่พิสัย"</option>
+<option value="บึงกาฬ">จุดจอดหอคำ"</option>
+<option value="บึงกาฬ">จุดจอดไคสี"</option> 
+<option value="บึงกาฬ">จุดจอดชัยพร"</option>
+<option value="บึงกาฬ">จุดจอดตลาดโซ่พิสัย"</option>
+<option value="บึงกาฬ">จุดจอดบ้านคำแก้ว"</option> 
+<option value="บึงกาฬ">จุดจอดบ้านท่าเรือ"</option>
+<option value="บึงกาฬ">จุดจอดบ้านท่าศรีชมชื่น"</option>
+<option value="บึงกาฬ">จุดจอดบ้านหนองหัวช้าง"</option>
+<option value="บึงกาฬ">จุดจอดบ้านดงเสียด"</option>
+<option value="บึงกาฬ">จุดจอดบ้านโนน"</option>
+<option value="บึงกาฬ">จุดจอดบ้านพรสวรรค์"</option>
+<option value="บึงกาฬ">จุดจอดบ้านปรารถนาดี"</option> 
+<option value="บึงกาฬ">จุดจอดบ้านป่าแฝก"</option>
+<option value="บึงกาฬ">จุดจอดบ้านโคกสำราญ"</option>
+<option value="บึงกาฬ">จุดจอดบ้านห้วยลึก"</option>
+<option value="บึงกาฬ">จุดจอดบ้านโสกก่าม"</option> 
+<option value="บึงกาฬ">จุดจอดบ้านชมพูพร"</option>
+<option value="บึงกาฬ">จุดจอดบริษัทไทยฮั้ว"</option>
+<option value="บึงกาฬ">จุดจอดหนองจั่น"</option> 
+<option value="บึงกาฬ">จุดจอดบ้านโคกสะอาด"</option>
+<option value="บึงกาฬ">จุดจอดบ้านกำแพงเพชร"</option>
+<option value="บึงกาฬ">จุดจอดบ้านทองสาย"</option>
+<option value="บึงกาฬ">จุดจอดบ้านดอนอุดม"</option> 
+<option value="บึงกาฬ">|จุดจอดแยกบ้านหนองนาแซง"</option>
+<option value="บึงกาฬ">จุดจอดบ้านแสนสำราญ"</option>
+<option value="บึงกาฬ">จุดจอดบ้านแสนสุข"</option>
+<option value="บึงกาฬ">จุดจอดบ้านประเสริฐ"</option>
+<option value="บึงกาฬ">จุดจอดบ้านหนองคอน"</option>
+<option value="บึงกาฬ">จุดจอดบ้านโพนแพง"</option>
+<option value="บึงกาฬ">จุดจอดบ้านเปงจาน"</option>
+<option value="บึงกาฬ">จุดจอดบ้านอาญา"</option>
+<option value="บึงกาฬ">จุดจอดบ้านต้อน"</option>
+<option value="บึงกาฬ">จุดจำหน่ายตั๋วปากคาด"</option>
+<option value="บึงกาฬ">จุดจอดบ้านห้วยก้านเหลือง"</option>
+<option value="บึงกาฬ">จุดจอดบ้านสะง้อ"</option>
+<option value="บึงกาฬ">จุดจอดบ้านหนองหมู"</option>
+<option value="บึงกาฬ">จุดจอดบ้านห้วยไม้ซอด"</option>
+<option value="บึงกาฬ">จุดจอดบ้านหอคำ"</option>
+<option value="บึงกาฬ">จุดจอดบ้านอาฮง"</option>
+<option value="บึงกาฬ">จุดจอดบ้านไคสี"</option>
+<option value="บึงกาฬ">จุดจอดบ้านท่าสะอาด"</option>
+<option value="บึงกาฬ">จุดจอดบ้านคำหมื่น"</option>
+<option value="บึงกาฬ">จุดจอดบ้านคำแสน"</option>
+<option value="บึงกาฬ">จุดจอดบ้านห้วยเซียม"</option>
+<option value="บึงกาฬ">จุดจอดบ้านดอนยม"</option>
+<option value="บึงกาฬ">จุดจอดบ้านหนองแวง"</option>
+<option value="บึงกาฬ">จุดจอดแยกบ้านพันลำ"</option>
+<option value="บึงกาฬ">จุดจอดภูกระแต"</option>
+<option value="บุรีรัมย์">สถานีขนส่งผู้โดยสาร จ.บุรีรัมย์"</option>
+<option value="บุรีรัมย์">จุดจอดเมืองลีง"</option> 
+<option value="บุรีรัมย์">โนนจำปา"</option> 
+<option value="บุรีรัมย์">จุดจอด อ.กระสัง"</option>
+<option value="บุรีรัมย์">จุดจอดระกา"</option>
+<option value="บุรีรัมย์">จุดจอดสองชั้น"</option>
+<option value="บุรีรัมย์">จุดจอดลำดวน"</option>
+<option value="บุรีรัมย์">จุดจอดโคกสิงห์"</option>
+<option value="บุรีรัมย์">จุดจอดพยัคภูมิพิสัย "</option>
+<option value="บุรีรัมย์">จุดจอดหนองกี่"</option>
+<option value="บุรีรัมย์">จุดจอดนางรอง"</option>
+<option value="บุรีรัมย์">จุดจอดประโคนชัย"</option>
+<option value="บุรีรัมย์">จุดจอดพุทไธสง "</option>
+<option value="บุรีรัมย์|ทางพาด"</option>
+<option value="บุรีรัมย์">สตึก"</option> 
+<option value="ปทุมธานี">จุดจอดรังสิต"</option>
+<option value="ปทุมธานี">จุดจอดนวนคร"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดประกิจยนต์หัวหิน"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอด อ.หัวหิน"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดศูนย์บริการทางหลวงเขาโพธิ์"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดประจวบคีรีขันธ์"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดชะอำ"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดบ้านต้นเกตุ"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดห้วยยาง"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอด อ.ทับสะแก"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดบ้านอ่างทอง"</option> 
+<option value="ประจวบคีรีขันธ์">จุดจอดหนองหอย"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดบ้านกรูด"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดเกาะยายฉิม"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอด อ.บางสะพานใหญ่"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอด อ.บางสะพาน"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดสี่แยกปราณบุรี"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดสามร้อยยอด"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดสี่แยกกุยบุรี"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดทางหลวงประจวบ"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดตลาดบางสะพานน้อย"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดกุยบุรี"</option>
+<option value="ปราจีนบุรี">จุดจอดแยกปราจีน"</option>
+<option value="ปราจีนบุรี">จุดจอด อ.ประจันตคาม"</option>
+<option value="ปราจีนบุรี">สถานีขนส่งผู้โดยสาร อ.กบินทร์บุรี"</option>
+<option value="ปราจีนบุรี">แยกกบินทร์บุรี"</option>
+<option value="ปัตตานี">สถานีขนส่งผู้โดยสาร จ.ปัตตานี"</option>
+<option value="ปัตตานี">สถานีขนส่งผู้โดยสาร อ.สายบุรี"</option>
+<option value="ปัตตานี">บ่อทอง"</option>
+<option value="ปัตตานี">ค่ายอิงคยุทธ"</option>
+<option value="ปัตตานี">จุดจอดปาลัส"</option>
+<option value="พะเยา">สถานีขนส่งผู้โดยสาร จ.พะเยา"</option>
+<option value="พะเยา">สถานีขนส่งผู้โดยสาร อ.เชียงคำ"</option>
+<option value="พะเยา">สำนักงานสยามเฟิสท์ทัวร์ (อ.ดอกคำใต้)" </option>
+<option value="พะเยา|สำนักงานสยามเฟิสท์ทัวร์ (อ.จุน)" </option>
+<option value="พะเยา">จุดจอดมหาวิทยาลัยนเรศวร(พะเยา)" </option> 
+<option value="พะเยา">จุดจอด อ.แม่ใจ"</option>
+<option value="พังงา">สถานีขนส่งผู้โดยสาร จ.พังงา"</option>
+<option value="พังงา">จุดจอด อ.ทับปุด"</option> 
+<option value="พังงา">สถานีขนส่งผู้โดยสาร อ.คุระบุรี"</option> 
+<option value="พังงา">สถานีขนส่งผู้โดยสาร อ.ตะกั่วป่า"</option>
+<option value="พังงา">จุดจอด อ.กะปง"</option> 
+<option value="พังงา">บขส. โคกกลอย"</option> 
+<option value="พังงา">จุดจอดบ้านบางเนียง ต.คึกคัก"</option>
+<option value="พังงา">จุดจอด ต.เขาหลัก"</option>
+<option value="พังงา">จุดจอดบ้านทับละมุ"</option>
+<option value="พังงา">จุดจอด ต.ทุ่งมะพร้าว"</option>
+<option value="พังงา">จุดจอด อ.ท้ายเหมือง"</option>
+<option value="พัทลุง">จุดจอดบ้านแม่ขรี (อ.ตะโหมด)" </option>
+<option value="พัทลุง">จุดจอดป่าพยอม"</option>
+<option value="พัทลุง">สถานีขนส่งผู้โดยสาร จ.พัทลุง"</option>
+<option value="พัทลุง">ท่ามิหรำ (โคนมเก่า)" </option>
+<option value="พัทลุง">จุดจอดป่าบอน"</option>
+<option value="พัทลุง">จุดจอด อ.เขาชัยสน"</option>
+<option value="พัทลุง">จุดจอดนาโหนด"</option>
+<option value="พัทลุง">จุดจอดท่าแค"</option>
+<option value="พัทลุง">จุดจอดแยกเอเชีย"</option>
+<option value="พัทลุง">ชุมพล"</option>
+<option value="พัทลุง">จุดจอดคูหา"</option>
+<option value="พิจิตร">จุดจอดปลวกสูง"</option>
+<option value="พิษณุโลก">สถานีขนส่งผู้โดยสาร จ.พิษณุโลก"</option>
+<option value="พิษณุโลก">สถานีขนส่งใหม่ พิษณุโลก"</option>
+<option value="พิษณุโลก">จุดจอด อ.ทรัพย์ไพรวัลย์"</option>
+<option value="พิษณุโลก">จุดจอดวังทอง"</option>
+<option value="พิษณุโลก">จุดจอดบ้านแยง"</option>
+<option value="พิษณุโลก">จุดจอดค่ายสฤษดิ์"</option>
+<option value="พิษณุโลก">จุดจอด ม.นเรศวร"</option>
+<option value="พิษณุโลก">จุดจอดหนองหญ้าปล้อง"</option>
+<option value="พิษณุโลก">สำนักงานพิษณุโลกยานยนต์ (ถนนพิชัยสงคราม)" </option>
+<option value="ภูเก็ต">สถานีขนส่งผู้โดยสาร จ.ภูเก็ต"</option>
+<option value="ภูเก็ต">จุดจอดสี่แยกราชภัฏภูเก็ต"</option>
+<option value="ภูเก็ต">จุดจอด อ.ถลาง"</option>
+<option value="มหาสารคาม">สำนักงานรุ่งประเสริฐ (มหาสารคาม)" </option>
+<option value="มหาสารคาม">จุดจอด อ.บรบือ"</option>
+<option value="มหาสารคาม">สถานีขนส่งผู้โดยสาร จ.มหาสารคาม"</option>
+<option value="มหาสารคาม">จุดจอดบ้านโพน"</option>
+<option value="มหาสารคาม">จุดจอด อ.เชียงยืน"</option> 
+<option value="มหาสารคาม">จุดจอดบ้านเขื่อน"</option>
+<option value="มหาสารคาม">อ.เชียงยืน"</option>
+<option value="มหาสารคาม">จุดจอด อ.พยัคฆภูมิพิสัย"</option>
+<option value="มหาสารคาม">จุดจอด อ.วาปีปทุม"</option>
+<option value="มุกดาหาร">สถานีขนส่งผู้โดยสาร จ.มุกดาหาร"; 
+<option value="มุกดาหาร">จุดจอด อ.คำชะอี"; 
+<option value="มุกดาหาร">จุดจอด อ.นิคมคำสร้อย"</option>
+<option value="มุกดาหาร">จุดจอดบ้านสามขา"</option> 
+<option value="มุกดาหาร">จุดจอด ต.คำป่าหลาย"</option>
+<option value="มุกดาหาร">จุดจอด อ.หนองสูง"</option> 
+<option value="มุกดาหาร">จุดจอดดงมัน"</option> 
+<option value="มุกดาหาร">จุดจอดคำอาฮวน"</option> 
+<option value="มุกดาหาร">จุดจอดดอนสวรรค์"</option> 
+ 
+
+                          </select></div>		  </td>
+                    </tr>
+                    <tr>
+                      <td height="15" align="left"><hr width="100%"></td>
+                    </tr>
+                    <tr>
+                      <td height="20" align="left"><span>จังหวัดปลายทาง:</span></td>
+                    </tr>
+                    <tr>
+                      <td align="left">
+                        <div align="left" id="returncitydisp">
+                          
+                          <select name="arrivecity" id="arrivecity" onChange="dispterminal(this.value,'arriveterminal')" style="width:200px;font-family:Tahoma;font-size:12px;">
+                            <option value="">--กรุณาเลือก--</option>
+                            <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option><option value="กระบี่">กระบี่</option><option value="กาญจนบุรี">กาญจนบุรี</option><option value="กาฬสินธุ์">กาฬสินธุ์</option><option value="กำแพงเพชร">กำแพงเพชร</option><option value="ขอนแก่น">ขอนแก่น</option><option value="จันทบุรี">จันทบุรี</option><option value="ฉะเชิงเทรา">ฉะเชิงเทรา</option><option value="ชลบุรี">ชลบุรี</option><option value="ชัยภูมิ">ชัยภูมิ</option><option value="ชุมพร">ชุมพร</option><option value="เชียงราย">เชียงราย</option><option value="เชียงใหม่">เชียงใหม่</option><option value="ตรัง">ตรัง</option><option value="ตราด">ตราด</option><option value="ตาก">ตาก</option><option value="นครนายก">นครนายก</option><option value="นครปฐม">นครปฐม</option><option value="นครพนม">นครพนม</option><option value="นครราชสีมา">นครราชสีมา</option><option value="นครศรีธรรมราช">นครศรีธรรมราช</option><option value="นครสวรรค์">นครสวรรค์</option><option value="นราธิวาส">นราธิวาส</option><option value="น่าน">น่าน</option><option value="บึงกาฬ">บึงกาฬ</option><option value="บุรีรัมย์">บุรีรัมย์</option><option value="ปทุมธานี">ปทุมธานี</option><option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์</option><option value="ปราจีนบุรี">ปราจีนบุรี</option><option value="พะเยา">พะเยา</option><option value="พังงา">พังงา</option><option value="พัทลุง">พัทลุง</option><option value="พิษณุโลก">พิษณุโลก</option><option value="เพชรบุรี">เพชรบุรี</option><option value="เพชรบูรณ์">เพชรบูรณ์</option><option value="แพร่">แพร่</option><option value="ภูเก็ต">ภูเก็ต</option><option value="มหาสารคาม">มหาสารคาม</option><option value="มุกดาหาร">มุกดาหาร</option><option value="แม่ฮ่องสอน">แม่ฮ่องสอน</option><option value="ยโสธร">ยโสธร</option><option value="ร้อยเอ็ด">ร้อยเอ็ด</option><option value="ระนอง">ระนอง</option><option value="ระยอง">ระยอง</option><option value="ราชบุรี">ราชบุรี</option><option value="ลำปาง">ลำปาง</option><option value="ลำพูน">ลำพูน</option><option value="เลย">เลย</option><option value="ศรีสะเกษ">ศรีสะเกษ</option><option value="สกลนคร">สกลนคร</option><option value="สงขลา">สงขลา</option><option value="สตูล">สตูล</option><option value="สมุทรสาคร">สมุทรสาคร</option><option value="สระแก้ว">สระแก้ว</option><option value="สระบุรี">สระบุรี</option><option value="สุโขทัย">สุโขทัย</option><option value="สุราษฎร์ธานี">สุราษฎร์ธานี</option><option value="สุรินทร์">สุรินทร์</option><option value="หนองคาย">หนองคาย</option><option value="หนองบัวลำภู">หนองบัวลำภู</option><option value="อำนาจเจริญ">อำนาจเจริญ</option><option value="อุดรธานี">อุดรธานี</option><option value="อุตรดิตถ์">อุตรดิตถ์</option><option value="อุบลราชธานี">อุบลราชธานี</option>
+                          </select>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <td height="20" align="left"><span>จุดลงรถ:</span></td>
+                    </tr>
+                    <tr>
+                      <td align="left">
+                        <div id="arriveterminaldisp" align="left">
+                          <select name="arriveterminal" id="select" style="width:200px;font-family:Tahoma;font-size:11px;">
+                            <option value="">--กรุณาเลือก--</option>
+ <option value="กระบี่">จุดจอด อ.คลองท่อม</option>
+<option value="กระบี่">สถานีขนส่งผู้โดยสาร จ.กระบี่</option>
+<option value="กรุงเทพมหานคร">สถานีขนส่งผู้โดยสารกรุงเทพฯ (หมอชิต 2)</option>
+<option value="กรุงเทพมหานคร">สถานีขนส่งผู้โดยสารกรุงเทพฯ (ถนนบรมราชชนนี)</option>
+<option value="กรุงเทพมหานคร">สำนักงานสหพันธ์ร้อยเอ็ดทัวร์วิภาวดี</option>
+<option value="กรุงเทพมหานคร">สำนักงานสมบัติทัวร์วิภาวดี</option>
+<option value="กรุงเทพมหานคร">สถานีขนส่งผู้โดยสารกรุงเทพฯ (รังสิต)</option>
+<option value="กรุงเทพมหานคร">สถานีขนส่งผู้โดยสารกรุงเทพฯ (เอกมัย)</option>
+<option value="กรุงเทพมหานคร">ท่าอากาศยานสุวรรณภูมิ</option>
+<option value="กรุงเทพมหานคร">สถานีซันบัส</option>
+<option value="กรุงเทพมหานคร">ออฟฟิศ 407 พัฒนา รังสิต</option>
+<option value="กรุงเทพมหานคร">ฟิวเจอร์ปาร์ครังสิต</option>
+<option value="กรุงเทพมหานคร">สำนักงานษุษราคัมทัวร์ (รังสิต) ถัดจากแม็คโคร 300 ม.</option>
+<option value="กาญจนบุรี">สถานีขนส่งผู้โดยสาร จ.กาญจนบุรี</option>
+<option value="กาญจนบุรี">จุดจอด อ.กุฉินารายณ์</option>
+<option value="กาญจนบุรี">สถานีขนส่งผู้โดยสาร จ.กาฬสินธุ์</option>
+<option value="กาญจนบุรี">จุดจอดติดป้อมตำรวจ สี่แยกไฟแดง อ.สมเด็จ</option>
+<option value="กาญจนบุรี">จุดจอด อ.ท่าคันโท</option>
+<option value="กาญจนบุรี">จุดจอดสามแยกห้วยเม็ก</option>
+<option value="กาญจนบุรี">จุดจอด อ.หนองกุงศรี</option>
+<option value="กำแพงเพชร">สถานีขนส่งผู้โดยสาร จ.กำแพงเพชร</option>
+<option value="กำแพงเพชร">จุดจอด ต.สลกบาตร</option>
+<option value="ขอนแก่น">สถานีขนส่งผู้โดยสาร อ.พล</option>
+<option value="ขอนแก่น">สถานีขนส่งผู้โดยสาร จ.ขอนแก่น</option>
+<option value="ขอนแก่น">จุดจอด อ.แวงใหญ่</option>
+<option value="ขอนแก่น">จุดจอด อ.พระยืน</option>
+<option value="ขอนแก่น">จุดจอด ต.ท่าศาลา</option>
+<option value="ขอนแก่น">จุดจอด อ.มัญจาคีรี</option>
+<option value="ขอนแก่น">จุดจอด อ.ชนบท</option>
+<option value="ขอนแก่น">สถานีขนส่งผู้โดยสาร อ.ชุมแพ</option>
+<option value="ขอนแก่น">จุดจอด อ.บ้านไผ่</option>
+<option value="ขอนแก่น">สำนักงานอีสานทัวร์ขอนแก่น</option>
+<option value="จันทบุรี">สำนักงานพรนิภาทัวร์ จ.จันทบุรี</option>
+<option value="จันทบุรี">สถานีขนส่งผู้โดยสาร จ.จันทบุรี</option>
+<option value="ฉะเชิงเทรา">จุดจอด ต.เขาหินซ้อน</option>
+<option value="ฉะเชิงเทรา">สถานีขนส่งผู้โดยสาร จ.ฉะเชิงเทรา</option>
+<option value="ชลบุรี">ท่าพัทยา</option>
+<option value="ชลบุรี">สำนักงานสวัสดีทั่วไทย พัทยา</option>
+<option value="ชลบุรี">สถานีขนส่งผู้โดยสาร จ.ชลบุรี</option>
+<option value="ชลบุรี">ท่าชลบุรี</option>
+<option value="ชลบุรี">ท่าแหลมฉบัง</option>
+<option value="ชัยภูมิ">จุดจอด ต.โนนจาน</option>
+<option value="ชัยภูมิ">จุดจอด ต.ละหาน</option>
+<option value="ชัยภูมิ">สถานีขนส่งผู้โดยสาร จ.ชัยภูมิ</option>
+<option value="ชัยภูมิ">จุดจอด ต.บ้านค่าย</option>
+<option value="ชัยภูมิ">บริษัท เทียนไชยแอร์ จำกัด</option>
+<option value="ชัยภูมิ">จุดจอด อ.จตุรัส</option>
+<option value="ชัยภูมิ">บริษัท ซันบัส จำกัด</option>
+<option value="ชัยภูมิ">จุดจอด อ.คอนสาร</option>
+<option value="ชัยภูมิ">จุดจอดบ้านแปรง</option>
+<option value="ชัยภูมิ">จุดจอด ต.หนองบัวโคก</option>
+<option value="ชัยภูมิ">บริษัท แอร์ชัยภูมิ จำกัด</option>
+<option value="ชัยภูมิ">จุดจอดแก้งคร้อ</option>
+<option value="ชัยภูมิ">จุดจอดภูเขียว</option>
+<option value="ชุมพร">จุดจอดสี่แยกปฐมพร</option>
+<option value="ชุมพร">จุดจอดรุ่งกิจทัวร์หลังตลาดชุมพร</option>
+<option value="ชุมพร">สถานีขนส่งผู้โดยสารปฐมพร(ขนส่ง จ.ชุมพร)</option>
+<option value="ชุมพร">สำนักงานสุวรรณนทีขนส่ง (อ.เมืองชุมพร)</option>
+<option value="ชุมพร">สำนักงานสุวรรณนทีขนส่ง (อ.ละแม)</option>
+<option value="ชุมพร">สำนักงานสุวรรณนทีขนส่ง ( อ.หลังสวน)</option>
+<option value="ตรัง">บริษัทศรีตรัง (หน้าบขส.ตรัง)</option>
+<option value="ตรัง">สถานีขนส่งผู้โดยสาร จ.ตรัง</option>
+<option value="ตราด">สถานีขนส่งผู้โดยสาร จ.ตราด</option>
+<option value="ตาก">สถานีขนส่งผู้โดยสาร อ .แม่สอด</option>
+<option value="ตาก">สถานีขนส่งผู้โดยสาร จ.ตาก</option>
+<option value="ตาก">ท่ารถเพชรทัวร์ แม่สอด</option>
+<option value="นครนายก">จุดจอด อ.บ้านนา</option>
+<option value="นครนายก">สถานีขนส่งผู้โดยสาร จ.นครนายก</option>
+<option value="นครนายก">จุดจอด อ.องครักษ์</option>
+<option value="นครปฐม">จุดจอดประกิจยนต์ นครปฐม</option>
+<option value="นครปฐม">สถานีขนส่งผู้โดยสาร อ.ธาตุพนม</option>
+<option value="นครพนม">สถานีขนส่งผู้โดยสาร จ.นครพนม</option>
+<option value="นครราชสีมา">สถานีขนส่งผู้โดยสาร จ.นครราชสีมา</option>
+<option value="นครราชสีมา">จุดจอด อ.ด่านขุนทด</option>
+<option value="นครราชสีมา">จุดจอดอ.สีดา</option>
+<option value="นครราชสีมา">ปากช่อง</option>
+<option value="นครศรีธรรมราช">สถานีขนส่งผู้โดยสาร อ.ปากพนัง"</option>
+<option value="นครศรีธรรมราช">สถานีขนส่งผู้โดยสาร จ.นครศรีธรรมราช" </option>
+<option value="นครศรีธรรมราช">สนามบินนครศรีธรรมราช" </option>
+<option value="นครศรีธรรมราช">จุดจอดจันดี" </option>
+<option value="นครศรีธรรมราช">Airport Van ทุ่งสง"</option>
+<option value="นครศรีธรรมราช">จุดจอดแยกสวนผัก/ตลาดใหม่" </option>
+<option value="นครศรีธรรมราช">จุดจอดแยกร่อนพิบูลย์" </option>
+<option value="นครศรีธรรมราช">จุดจอดรถตลาดไม้หลา" </option>
+<option value="นครศรีธรรมราช">จุดจอดแยกนาพรุ" </option>
+<option value="นครศรีธรรมราช">สถานีขนส่งผู้โดยสาร อ.ทุ่งสง"</option>
+<option value="นครศรีธรรมราช">จุดจอด อ.ขนอม" </option>
+<option value="นครศรีธรรมราช">จุดจอด อ.เชียรใหญ่" </option>
+<option value="นครศรีธรรมราช">จุดจอดบ้านบ่อล้อ" </option>
+<option value="นครศรีธรรมราช">ลานสกา" </option>
+<option value="นครศรีธรรมราช">วัดมะนาวหวาน" </option>
+<option value="นครสวรรค์">สถานีขนส่งผู้โดยสาร จ.นครสวรรค์"</option>
+<option value="นราธิวาส">สถานีขนส่งผู้โดยสาร อ.สุไหงโกลก" </option>
+<option value="น่าน">สถานีขนส่งผู้โดยสาร จ.น่าน" </option>
+<option value="น่าน">จุดจอดเวียงสา" </option>
+<option value="น่าน">จุดจอด อ.ทุ่งช้าง" </option>
+<option value="น่าน">จุดจอด อ.ท่าวังผา"</option>
+<option value="น่าน">จุดจอด อ.ปัว" </option>
+<option value="บึงกาฬ">สถานีขนส่งผู้โดยสาร จ.บึงกาฬ"</option>
+<option value="บึงกาฬ">จุดจอด อ.บุ่งคล้า" </option>
+<option value="บึงกาฬ">จุดจอด อ.พรเจริญ" </option>
+<option value="บึงกาฬ">บริษัทสวัสดีอีสาน" </option>
+<option value="บึงกาฬ">จุดจำหน่ายตั๋วปากคาด" </option>
+<option value="บึงกาฬ">จุดจอด อ.ศรีวิไล" </option>
+<option value="บึงกาฬ">จุดจอด อ.โซ่พิสัย" </option>
+<option value="บุรีรัมย์">จุดจอดหนองกี่" </option>
+<option value="บุรีรัมย์">จุดจอดนางรอง" </option>
+<option value="บุรีรัมย์">จุดจอดประโคนชัย" </option>
+<option value="ปทุมธานี">จุดจอดรังสิต" </option>
+<option value="ปทุมธานีจุดจอดนวนคร" </option>
+<option value="ประจวบคีรีขันธ์">จุดจอดประกิจยนต์หัวหิน" </option>
+<option value="ประจวบคีรีขันธ์">จุดจอด อ.หัวหิน" </option>
+<option value="ประจวบคีรีขันธ์">จุดจอดศูนย์บริการทางหลวงเขาโพธิ์" </option>
+<option value="ประจวบคีรีขันธ์">จุดจอดประจวบคีรีขันธ์" </option>
+<option value="ประจวบคีรีขันธ์">จุดจอดชะอำ" </option>
+<option value="ปราจีนบุรี">จุดจอดแยกปราจีน" </option>
+<option value="ปราจีนบุรี">จุดจอด อ.ประจันตคาม"</option>
+<option value="ปราจีนบุรี">สถานีขนส่งผู้โดยสาร อ.กบินทร์บุรี"</option>
+<option value="พะเยา">จุดจอดมหาวิทยาลัยนเรศวร(พะเยา)" </option>
+<option value="พะเยา">สถานีขนส่งผู้โดยสาร จ.พะเยา" </option>
+<option value="พะเยา">จุดจอด อ.แม่ใจ" </option>
+<option value="พังงา">สถานีขนส่งผู้โดยสาร จ.พังงา" </option>
+<option value="พังงา">สถานีขนส่งผู้โดยสาร อ.ตะกั่วป่า" </option>
+<option value="พัทลุง">ท่ามิหรำ (โคนมเก่า)" </option>
+<option value="พัทลุง">สถานีขนส่งผู้โดยสาร จ.พัทลุง" </option>
+<option value="พิษณุโลก">สถานีขนส่งผู้โดยสาร จ.พิษณุโลก" </option>
+<option value="พิษณุโลก">จุดจอด อ.ทรัพย์ไพรวัลย์" </option>
+<option value="พิษณุโลก">จุดจอดวังทอง" </option>
+<option value="พิษณุโลก">จุดจอดบ้านแยง" </option>
+<option value="พิษณุโลก">จุดจอดค่ายสฤษดิ์" </option>
+<option value="พิษณุโลก">สถานีขนส่งใหม่ พิษณุโลก"</option>
+<option value="พิษณุโลก">จุดจอด ม.นเรศวร" </option>
+<option value="พิษณุโลก">สำนักงานพิษณุโลกยานยนต์ (ถนนพิชัยสงคราม)" </option>
+<option value="ภูเก็ต">สถานีขนส่งผู้โดยสาร จ.ภูเก็ต"</option>
+<option value="ภูเก็ต">จุดจอดสี่แยกราชภัฏภูเก็ต" </option>
+<option value="มหาสารคาม">สถานีขนส่งผู้โดยสาร จ.มหาสารคาม" </option>
+<option value="มหาสารคาม">สำนักงานรุ่งประเสริฐ (มหาสารคาม)" </option>
+<option value="มหาสารคาม">อ.เชียงยืน" </option>
+<option value="มุกดาหาร">สถานีขนส่งผู้โดยสาร จ.มุกดาหาร" </option>
+<option value="มุกดาหาร">จุดจอด อ.นิคมคำสร้อย"</option>
+<option value="ยโสธร">จุดจอดค้อวัง" </option>
+<option value="ยโสธร">สถานีขนส่งผู้โดยสาร จ.ยโสธร" </option>
+<option value="ยโสธร">จุดจอดเลิงนกทาเก่า" </option>
+<option value="ยโสธร">จุดจอด อ.ทรายมูล" </option>
+<option value="ยโสธร">จุดจอด อ.กุดชุม" </option>
+<option value="ยโสธร">จุดจอด ต.คำเตย"</option>
+<option value="ยโสธร">จุดจอดภูกลอย" </option>
+<option value="ยโสธร">จุดจอดห้วยสะแบก" </option>
+<option value="ยโสธร">จุดจอดเลิงนกทาใหม่" </option>
+<option value="ยโสธร">จุดจอด อ.ป่าติ้ว" </option>
+<option value="ร้อยเอ็ด">สถานีขนส่งผู้โดยสาร จ.ร้อยเอ็ด" </option>
+<option value="ร้อยเอ็ด">จุดจอด อ.เสลภูมิ" </option>
+<option value="ร้อยเอ็ด">สถานีขนส่งผู้โดยสาร อ.สุวรรณภูมิ"</option>
+<option value="ร้อยเอ็ด">จุดจอดเกษตรวิสัย"</option>
+<option value="ร้อยเอ็ด">จุดจอดบ้านหัวนา" </option>
+<option value="ระนอง">ศูนย์บริการลูกค้ารุ่งกิจทัวร์ จ.ระนอง" </option>
+<option value="ระนอง">สถานีขนส่งผู้โดยสาร จ.ระนอง" </option>
+<option value="ระยอง">ท่าระยอง" </option>
+<option value="ระยอง">ท่ามาบตาพุด"</option>
+<option value="ระยอง">ท่า อ.แกลง" </option>
+<option value="ระยอง">จุดจอด อ.บ้านฉาง" </option>
+<option value="ระยอง">สถานีขนส่งผู้โดยสาร จ.ระยอง (ใหม่)" </option>
+<option value="ระยอง">สำนักงานระยองทัวร์" </option>
+<option value="ราชบุรี">จุดจอดประกิจยนต์ ราชบุรี" </option>
+<option value="ราชบุรี">สวนผึ้ง" </option>
+<option value="ลำปาง">สถานีขนส่งผู้โดยสาร จ.ลำปาง"</option>
+<option value="ลำปาง">จุดจอด อ.งาว" </option>
+<option value="ลำพูน">จุดจอดแยกดอยติ"</option>
+<option value="ศรีสะเกษ">สถานีขนส่งผู้โดยสาร จ.ศรีสะเกษ" </option>
+<option value="ศรีสะเกษ">จุดจอดยางชุมน้อย"</option>
+<option value="ศรีสะเกษ">อ.บึงบูรพ์" </option>
+<option value="ศรีสะเกษ">จุดจอดกันทรลักษ์" </option>
+<option value="ศรีสะเกษ">จุดจอด อ.อุทุมพร" </option>
+<option value="ศรีสะเกษ">จุดจอด อ.ห้วยทับทัน" </option>
+<option value="สกลนคร">สถานีขนส่งผู้โดยสาร จ.สกลนคร" </option>
+<option value="สกลนคร">จุดจอด อ.พังโคน" </option>
+<option value="สกลนคร">จุดจอด อ.นิคมน้ำอูน" </option>
+<option value="สกลนคร">จุดจอด อ.วานรนิวาส" </option>
+<option value="สกลนคร">จุดจอดคำตากล้า" </option>
+<option value="สกลนคร">จุดจอด อ.สว่างแดนดิน" </option>
+<option value="สงขลา">สถานีขนส่งผู้โดยสาร อ.หาดใหญ่"</option>
+<option value="สงขลา">จุดจอด อ.ด่านนอก" </option>
+<option value="สงขลา">สถานีขนส่งผู้โดยสาร จ.สงขลา"</option>
+<option value="สตูล">สถานีขนส่งผู้โดยสาร จ.สตูล" </option>
+<option value="สมุทรสาคร">จุดจอดมหาชัย" </option>
+<option value="สระบุรี">จุดจอด อ.วิหารแดง" </option>
+<option value="สระบุรี">จุดจอด อ.หินกอง"</option>
+<option value="สระบุรี">สถานีขนส่งผู้โดยสาร จ.สระบุรี"</option>
+<option value="สระแก้ว">จุดจอด ต.ศาลาลำดวน" </option>
+<option value="สระแก้ว">จุดจอด ต.หนองกุง"</option>
+<option value="สระแก้ว">สถานีขนส่งผู้โดยสาร อ.อรัญประเทศ" </option>
+<option value="สระแก้ว">จุดจอด อ.วัฒนานคร" </option>
+<option value="สระแก้ว">จุดจอด ต.บ้านแก้ง" </option>
+<option value="สระแก้ว">สถานีขนส่งผู้โดยสาร จ.สระแก้ว"</option>
+<option value="สระแก้ว">จุดจอดตลาดโรงเกลือ" </option>
+<option value="สุราษฎร์ธานี">สถานีขนส่งผู้โดยสาร จ.สุราษฎร์ธานี" </option>
+<option value="สุราษฎร์ธานี">สหกรณ์สุราษฎร์ธานี จำกัด" </option>
+<option value="สุรินทร์">อ.รัตนบุรี" </option>
+<option value="สุรินทร์">จุดจอดปราสาท"</option>
+<option value="สุรินทร์">จุดจอด อ.สำโรงทาบ" </option>
+<option value="สุรินทร์">สถานีขนส่งผู้โดยสาร จ.สุรินทร์" </option>
+<option value="สุรินทร์">จุดจอด อ.ศีขรภูมิ" </option>
+<option value="สุโขทัย">สถานีขนส่งผู้โดยสาร จ.สุโขทัย"</option>
+<option value="หนองคาย">จุดจอด อ.ศรีเชียงใหม่" </option>
+<option value="หนองคาย">จุดจอด อ.สังคม" </option>
+<option value="หนองคาย">สถานีขนส่งผู้โดยสาร จ.หนองคาย"</option>
+<option value="หนองคาย">จุดจอดท่าบ่อ" </option>
+<option value="หนองคาย">จุดจอดโพนทอง" </option>
+<option value="หนองคาย">จุดจำหน่ายตั๋วรัตนวาปี"</option>
+<option value="หนองคาย">จุดจำหน่ายตั๋วโพนพิสัย" </option>
+<option value="หนองคาย">จุดจอด อ.เฝ้าไร่" </option>
+<option value="หนองบัวลำภู">จุดจอดหนองบัวลำภู" </option>
+<option value="หนองบัวลำภู">จุดจอดสุวรรณคูหา"</option>
+<option value="หนองบัวลำภู">สถานีขนส่งผู้โดยสาร จ.หนองบัวลำภู" </option>
+<option value="หนองบัวลำภู">จุดจอดนากลาง" </option>
+<option value="หนองบัวลำภู">จุดจอดนาวัง" </option>
+<option value="อำนาจเจริญ">สถานีขนส่งผู้โดยสาร จ.อำนาจเจริญ" </option>
+<option value="อำนาจเจริญ">จุดจอด ต.เสนางคนิคม"</option>
+<option value="อำนาจเจริญ">จุดจอด อ.ปทุมราชวงศา"</option>
+<option value="อำนาจเจริญ">จุดจอด อ.ประทุมราช" </option>
+<option value="อุดรธานี">สถานีขนส่งผู้โดยสาร จ.อุดรธานี" </option>
+<option value="อุดรธานี">สถานีขนส่งผู้โดยสาร จ.อุดรธานี แห่งที่ 2"</option>
+<option value="อุดรธานี">จุดจอดเซ็นทรัลอุดรธานี" </option>
+<option value="อุดรธานี">จุดจอด อ.น้ำโสม" </option>
+<option value="อุดรธานี">จุดจอด อ.บ้านผือ" </option>
+<option value="อุดรธานี">จุดจอดบ้านกลางใหญ่" </option>
+<option value="อุดรธานี">จุดจอดแยกสามเหลี่ยม"</option>
+<option value="อุดรธานี">จุดจอด อ.นายูง"</option>
+<option value="อุดรธานี">จุดจอด อ.บ้านดุง" </option>
+<option value="อุดรธานี">จุดจอดหนองเม็ก" </option>
+<option value="อุตรดิตถ์">สถานีขนส่งผู้โดยสาร จ.อุตรดิตถ์"</option>
+<option value="อุบลราชธานี">สถานีขนส่งผู้โดยสาร จ.อุบลราชธานี"</option>
+<option value="อุบลราชธานี">จุดจอดบ้านกอก" </option>
+<option value="อุบลราชธานี">จุดจอดบ้านแคน" </option>
+<option value="อุบลราชธานี">จุดจอดเขื่องใน" </option>
+<option value="อุบลราชธานี">จุดจอดธาตุน้อย" </option>
+<option value="อุบลราชธานี">จุดจอดช่องเม็ก"</option>
+<option value="อุบลราชธานี">จุดจอดเดชอุดม" </option>
+<option value="อุบลราชธานี">จุดจอดพิบูลมังสาหาร" </option>
+<option value="อุบลราชธานี">จุดจอดบ้านคันพระลาน" </option>
+<option value="อุบลราชธานี">จุดจอดบ้านบก" </option>
+<option value="อุบลราชธานี">จุดจอดบ้านไทรงาม"</option>
+<option value="อุบลราชธานี">จุดจอด อ.เขมราฐ"</option>
+<option value="อุบลราชธานี">จุดจอด อ.หนองผือ" </option>
+<option value="อุบลราชธานี">จุดจอดบุณฑริก" </option>
+<option value="อุบลราชธานี">จุดจอดปากแซง" </option>
+<option value="อุบลราชธานี">จุดจอด อ.โพธิ์ไทร" </option>
+<option value="เชียงราย">สถานีขนส่งผู้โดยสาร จ.เชียงราย" </option>
+<option value="เชียงราย">สถานีขนส่งผู้โดยสาร อ.แม่สาย" </option>
+<option value="เชียงราย">สำนักงานสมบัติทัวร์ อ.เชียงของ"</option>
+<option value="เชียงราย">จุดจอด งาว" </option>
+<option value="เชียงราย">จุดจอด อ.พาน" </option>
+<option value="เชียงราย">จุดจอดบ้านดู่"</option>
+<option value="เชียงราย">จุดจอดแม่ฟ้าหลวง" </option>
+<option value="เชียงราย">จุดจอด อ.แม่จัน" </option>
+<option value="เชียงราย">จุดจอดห้วยไคร้" </option>
+<option value="เชียงใหม่">สถานีขนส่งผู้โดยสาร จ.เชียงใหม่ (อาเขต)" </option>
+<option value="เชียงใหม่">จุดจอด อ.แม่มาลัย" </option>
+<option value="เชียงใหม่">จุดจอด อ.สบเปิง" </option>
+<option value="เชียงใหม่">จุดจอด อ.ป่าแป๋" </option>
+<option value="เชียงใหม่">จุดจอด อ.แม่เลา อ.แม่แสะ" </option>
+<option value="เชียงใหม่">จุดจอด อ.สันป่าตอง" </option>
+<option value="เชียงใหม่">จุดจอด อ.จอมทอง" </option>
+<option value="เชียงใหม่">จุดจอด อ.ฮอด"</option>
+<option value="เชียงใหม่">จุดจอด อ.แม่แจ่ม" </option>
+<option value="เชียงใหม่">จุดจอด อ.อมก๋อย บ่อหลวง กิ่วลม" </option>
+<option value="เชียงใหม่">จุดจอด ม.แม่สนาม" </option>
+<option value="เชียงใหม่">จุดจอด อ.บ่อสลี่ กองลอย" </option>
+<option value="เชียงใหม่">จุดจอด อ.แม่แสะ" </option>
+<option value="เชียงใหม่">สำนักงานนิววิริยะยานยนต์ทัวร์ (บ้านท่าตอน)" </option>
+<option value="เพชรบุรี">จุดจอดเพชรบุรี" </option>
+<option value="เพชรบูรณ์">ท่ารถเพชรทัวร์ หล่มสัก" </option>
+<option value="เพชรบูรณ์">สถานีขนส่งผู้โดยสาร อ.หล่มสัก" </option>
+<option value="เพชรบูรณ์">จุดจอด อ.น้ำหนาว"</option>
+<option value="เพชรบูรณ์">จุดจอดแคมป์สน" </option>
+<option value="เพชรบูรณ์">จุดจอดเข็กน้อย" </option>
+<option value="เลย">สถานีขนส่งผู้โดยสารจังหวัดเลย"</option>
+<option value="เลย">จุดจอด อ.ปากชม" </option>
+<option value="เลย">จุดจอดท่าลี่" </option>
+<option value="เลย">เชียงคาน" </option>
+<option value="เลย">ท่าภูเรือ" </option>
+<option value="เลย">ท่าด่านซ้าย" </option>
+<option value="เลย">จุดจอดผานกเค้า"</option>
+<option value="เลย">จุดจอดภูกระดึง" </option>
+<option value="เลย">จุดจอดบ้านธาตุ" </option>
+<option value="เลย">จุดจอดหนองหิน" </option>
+<option value="เลย">วังสะพุง" </option>
+<option value="แพร่">จุดจอด อ.เด่นชัย" </option>
+<option value="แพร่">จุดจอด อ.ร้องกวาง"</option>
+<option value="แพร่">สถานีขนส่งผู้โดยสาร จ.แพร่"</option>
+<option value="แพร่">จุดจอด อ.สอง" </option>
+<option value="แม่ฮ่องสอน">สถานีขนส่งผู้โดยสาร จ.แม่ฮ่องสอน" </option>
+<option value="แม่ฮ่องสอน">จุดจอด อ. ปาย"</option>
+<option value="แม่ฮ่องสอน">จุดจอด อ.แม่สะเรียง"</option>
+<option value="แม่ฮ่องสอน">จุดจอด อ.ขุนยวม" </option>
+<option value="แม่ฮ่องสอน">จุดจอด อ.ปางมะผ้า สบป่อง" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ห้วยน้ำดัง ม.ศาลามูเซอ" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.แม่ปิง " </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ทรายงาม"</option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ปางแปก กิ่วลม" </option>
+<option value="แม่ฮ่องสอน">จุดจอด อ.น้ำริน"</option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.แม่ลานา" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.น้ำแข็ง น้ำกัด แม่สุยะ"</option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ห้วยสะลอบ"</option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ห้วยผา ถ้ำปลา" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ท่าป่าส้าน" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ปางหมู" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ห้วยกุ้ง แม่ลาย แม่เหาะ" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ท่าผาบุ้ม แม่เตี๊ย ทุ่งรวงทอง" </option>
+<option value="แม่ฮ่องสอน">จุดจอด อ.แม่ลาน้อย" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.แม่ปาง"</option>
+<option value="แม่ฮ่องสอน">จุดจอด อ.แม่ลาหลวง แม่สุ" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.แม่โถ" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.หนองแห้ง ท่าหินส้ม" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.หางปอน เมืองปอน"</option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.แม่สุรินทร์"</option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ห้วยโป่ง แม่จ๋า" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ป่าลาน" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ห้วยโป่งการ" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ทุ่งรวงทอง" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.แม่เหาะ" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.ศาลามูเซอ" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.กิ่วลม" </option>
+<option value="แม่ฮ่องสอน">จุดจอด ม.แม่สุยะ" </option>
+<option value="นราธิวาส">สถานีขนส่งผู้โดยสาร จ.นราธิวาส"</option> 
+<option value="นราธิวาส">สถานีขนส่งผู้โดยสาร อ.ตากใบ"</option>
+<option value="นราธิวาส">สถานีขนส่งผู้โดยสาร อ.สุไหงโกลก"</option>
+<option value="นราธิวาส">จุดจอดต้นไทร"</option>
+<option value="นราธิวาส">จุดจอด อ.บาเจาะ"</option>
+<option value="นราธิวาส">จุดจอดยี่ง้อ"</option>
+<option value="นราธิวาส">จุดจอดกะลาพอ"</option>
+<option value="นราธิวาส">จุดจอดมะนังดาลำ"</option>
+<option value="น่าน">จุดจอด อ.ปัว"</option>
+<option value="น่าน">จุดจอด อ.ท่าวังผา"</option>
+<option value="น่าน">สถานีขนส่งผู้โดยสาร จ.น่าน"</option>
+<option value="น่าน">จุดจอด อ.ทุ่งช้าง"</option>
+<option value="บึงกาฬ">สถานีขนส่งผู้โดยสาร จ.บึงกาฬ"</option>
+<option value="บึงกาฬ">จุดจอด อ.ศรีวิไล"</option> 
+<option value="บึงกาฬ">จุดจอดดอนหญ้านาง"</option>
+<option value="บึงกาฬ">จุดจอด อ.พรเจริญ"</option>
+<option value="บึงกาฬ">จุดจอด อ.บุ่งคล้า"</option>
+<option value="บึงกาฬ">จุดจอด อ.ปากคาด"</option>
+<option value="บึงกาฬ">จุดจอดเซกา"</option>
+<option value="บึงกาฬ">จุดจอด อ.โซ่พิสัย"</option>
+<option value="บึงกาฬ">จุดจอดหอคำ"</option>
+<option value="บึงกาฬ">จุดจอดไคสี"</option> 
+<option value="บึงกาฬ">จุดจอดชัยพร"</option>
+<option value="บึงกาฬ">จุดจอดตลาดโซ่พิสัย"</option>
+<option value="บึงกาฬ">จุดจอดบ้านคำแก้ว"</option> 
+<option value="บึงกาฬ">จุดจอดบ้านท่าเรือ"</option>
+<option value="บึงกาฬ">จุดจอดบ้านท่าศรีชมชื่น"</option>
+<option value="บึงกาฬ">จุดจอดบ้านหนองหัวช้าง"</option>
+<option value="บึงกาฬ">จุดจอดบ้านดงเสียด"</option>
+<option value="บึงกาฬ">จุดจอดบ้านโนน"</option>
+<option value="บึงกาฬ">จุดจอดบ้านพรสวรรค์"</option>
+<option value="บึงกาฬ">จุดจอดบ้านปรารถนาดี"</option> 
+<option value="บึงกาฬ">จุดจอดบ้านป่าแฝก"</option>
+<option value="บึงกาฬ">จุดจอดบ้านโคกสำราญ"</option>
+<option value="บึงกาฬ">จุดจอดบ้านห้วยลึก"</option>
+<option value="บึงกาฬ">จุดจอดบ้านโสกก่าม"</option> 
+<option value="บึงกาฬ">จุดจอดบ้านชมพูพร"</option>
+<option value="บึงกาฬ">จุดจอดบริษัทไทยฮั้ว"</option>
+<option value="บึงกาฬ">จุดจอดหนองจั่น"</option> 
+<option value="บึงกาฬ">จุดจอดบ้านโคกสะอาด"</option>
+<option value="บึงกาฬ">จุดจอดบ้านกำแพงเพชร"</option>
+<option value="บึงกาฬ">จุดจอดบ้านทองสาย"</option>
+<option value="บึงกาฬ">จุดจอดบ้านดอนอุดม"</option> 
+<option value="บึงกาฬ">|จุดจอดแยกบ้านหนองนาแซง"</option>
+<option value="บึงกาฬ">จุดจอดบ้านแสนสำราญ"</option>
+<option value="บึงกาฬ">จุดจอดบ้านแสนสุข"</option>
+<option value="บึงกาฬ">จุดจอดบ้านประเสริฐ"</option>
+<option value="บึงกาฬ">จุดจอดบ้านหนองคอน"</option>
+<option value="บึงกาฬ">จุดจอดบ้านโพนแพง"</option>
+<option value="บึงกาฬ">จุดจอดบ้านเปงจาน"</option>
+<option value="บึงกาฬ">จุดจอดบ้านอาญา"</option>
+<option value="บึงกาฬ">จุดจอดบ้านต้อน"</option>
+<option value="บึงกาฬ">จุดจำหน่ายตั๋วปากคาด"</option>
+<option value="บึงกาฬ">จุดจอดบ้านห้วยก้านเหลือง"</option>
+<option value="บึงกาฬ">จุดจอดบ้านสะง้อ"</option>
+<option value="บึงกาฬ">จุดจอดบ้านหนองหมู"</option>
+<option value="บึงกาฬ">จุดจอดบ้านห้วยไม้ซอด"</option>
+<option value="บึงกาฬ">จุดจอดบ้านหอคำ"</option>
+<option value="บึงกาฬ">จุดจอดบ้านอาฮง"</option>
+<option value="บึงกาฬ">จุดจอดบ้านไคสี"</option>
+<option value="บึงกาฬ">จุดจอดบ้านท่าสะอาด"</option>
+<option value="บึงกาฬ">จุดจอดบ้านคำหมื่น"</option>
+<option value="บึงกาฬ">จุดจอดบ้านคำแสน"</option>
+<option value="บึงกาฬ">จุดจอดบ้านห้วยเซียม"</option>
+<option value="บึงกาฬ">จุดจอดบ้านดอนยม"</option>
+<option value="บึงกาฬ">จุดจอดบ้านหนองแวง"</option>
+<option value="บึงกาฬ">จุดจอดแยกบ้านพันลำ"</option>
+<option value="บึงกาฬ">จุดจอดภูกระแต"</option>
+<option value="บุรีรัมย์">สถานีขนส่งผู้โดยสาร จ.บุรีรัมย์"</option>
+<option value="บุรีรัมย์">จุดจอดเมืองลีง"</option> 
+<option value="บุรีรัมย์">โนนจำปา"</option> 
+<option value="บุรีรัมย์">จุดจอด อ.กระสัง"</option>
+<option value="บุรีรัมย์">จุดจอดระกา"</option>
+<option value="บุรีรัมย์">จุดจอดสองชั้น"</option>
+<option value="บุรีรัมย์">จุดจอดลำดวน"</option>
+<option value="บุรีรัมย์">จุดจอดโคกสิงห์"</option>
+<option value="บุรีรัมย์">จุดจอดพยัคภูมิพิสัย "</option>
+<option value="บุรีรัมย์">จุดจอดหนองกี่"</option>
+<option value="บุรีรัมย์">จุดจอดนางรอง"</option>
+<option value="บุรีรัมย์">จุดจอดประโคนชัย"</option>
+<option value="บุรีรัมย์">จุดจอดพุทไธสง "</option>
+<option value="บุรีรัมย์|ทางพาด"</option>
+<option value="บุรีรัมย์">สตึก"</option> 
+<option value="ปทุมธานี">จุดจอดรังสิต"</option>
+<option value="ปทุมธานี">จุดจอดนวนคร"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดประกิจยนต์หัวหิน"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอด อ.หัวหิน"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดศูนย์บริการทางหลวงเขาโพธิ์"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดประจวบคีรีขันธ์"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดชะอำ"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดบ้านต้นเกตุ"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดห้วยยาง"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอด อ.ทับสะแก"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดบ้านอ่างทอง"</option> 
+<option value="ประจวบคีรีขันธ์">จุดจอดหนองหอย"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดบ้านกรูด"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดเกาะยายฉิม"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอด อ.บางสะพานใหญ่"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอด อ.บางสะพาน"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดสี่แยกปราณบุรี"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดสามร้อยยอด"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดสี่แยกกุยบุรี"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดทางหลวงประจวบ"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดตลาดบางสะพานน้อย"</option>
+<option value="ประจวบคีรีขันธ์">จุดจอดกุยบุรี"</option>
+<option value="ปราจีนบุรี">จุดจอดแยกปราจีน"</option>
+<option value="ปราจีนบุรี">จุดจอด อ.ประจันตคาม"</option>
+<option value="ปราจีนบุรี">สถานีขนส่งผู้โดยสาร อ.กบินทร์บุรี"</option>
+<option value="ปราจีนบุรี">แยกกบินทร์บุรี"</option>
+<option value="ปัตตานี">สถานีขนส่งผู้โดยสาร จ.ปัตตานี"</option>
+<option value="ปัตตานี">สถานีขนส่งผู้โดยสาร อ.สายบุรี"</option>
+<option value="ปัตตานี">บ่อทอง"</option>
+<option value="ปัตตานี">ค่ายอิงคยุทธ"</option>
+<option value="ปัตตานี">จุดจอดปาลัส"</option>
+<option value="พะเยา">สถานีขนส่งผู้โดยสาร จ.พะเยา"</option>
+<option value="พะเยา">สถานีขนส่งผู้โดยสาร อ.เชียงคำ"</option>
+<option value="พะเยา">สำนักงานสยามเฟิสท์ทัวร์ (อ.ดอกคำใต้)" </option>
+<option value="พะเยา|สำนักงานสยามเฟิสท์ทัวร์ (อ.จุน)" </option>
+<option value="พะเยา">จุดจอดมหาวิทยาลัยนเรศวร(พะเยา)" </option> 
+<option value="พะเยา">จุดจอด อ.แม่ใจ"</option>
+<option value="พังงา">สถานีขนส่งผู้โดยสาร จ.พังงา"</option>
+<option value="พังงา">จุดจอด อ.ทับปุด"</option> 
+<option value="พังงา">สถานีขนส่งผู้โดยสาร อ.คุระบุรี"</option> 
+<option value="พังงา">สถานีขนส่งผู้โดยสาร อ.ตะกั่วป่า"</option>
+<option value="พังงา">จุดจอด อ.กะปง"</option> 
+<option value="พังงา">บขส. โคกกลอย"</option> 
+<option value="พังงา">จุดจอดบ้านบางเนียง ต.คึกคัก"</option>
+<option value="พังงา">จุดจอด ต.เขาหลัก"</option>
+<option value="พังงา">จุดจอดบ้านทับละมุ"</option>
+<option value="พังงา">จุดจอด ต.ทุ่งมะพร้าว"</option>
+<option value="พังงา">จุดจอด อ.ท้ายเหมือง"</option>
+<option value="พัทลุง">จุดจอดบ้านแม่ขรี (อ.ตะโหมด)" </option>
+<option value="พัทลุง">จุดจอดป่าพยอม"</option>
+<option value="พัทลุง">สถานีขนส่งผู้โดยสาร จ.พัทลุง"</option>
+<option value="พัทลุง">ท่ามิหรำ (โคนมเก่า)" </option>
+<option value="พัทลุง">จุดจอดป่าบอน"</option>
+<option value="พัทลุง">จุดจอด อ.เขาชัยสน"</option>
+<option value="พัทลุง">จุดจอดนาโหนด"</option>
+<option value="พัทลุง">จุดจอดท่าแค"</option>
+<option value="พัทลุง">จุดจอดแยกเอเชีย"</option>
+<option value="พัทลุง">ชุมพล"</option>
+<option value="พัทลุง">จุดจอดคูหา"</option>
+<option value="พิจิตร">จุดจอดปลวกสูง"</option>
+<option value="พิษณุโลก">สถานีขนส่งผู้โดยสาร จ.พิษณุโลก"</option>
+<option value="พิษณุโลก">สถานีขนส่งใหม่ พิษณุโลก"</option>
+<option value="พิษณุโลก">จุดจอด อ.ทรัพย์ไพรวัลย์"</option>
+<option value="พิษณุโลก">จุดจอดวังทอง"</option>
+<option value="พิษณุโลก">จุดจอดบ้านแยง"</option>
+<option value="พิษณุโลก">จุดจอดค่ายสฤษดิ์"</option>
+<option value="พิษณุโลก">จุดจอด ม.นเรศวร"</option>
+<option value="พิษณุโลก">จุดจอดหนองหญ้าปล้อง"</option>
+<option value="พิษณุโลก">สำนักงานพิษณุโลกยานยนต์ (ถนนพิชัยสงคราม)" </option>
+<option value="ภูเก็ต">สถานีขนส่งผู้โดยสาร จ.ภูเก็ต"</option>
+<option value="ภูเก็ต">จุดจอดสี่แยกราชภัฏภูเก็ต"</option>
+<option value="ภูเก็ต">จุดจอด อ.ถลาง"</option>
+<option value="มหาสารคาม">สำนักงานรุ่งประเสริฐ (มหาสารคาม)" </option>
+<option value="มหาสารคาม">จุดจอด อ.บรบือ"</option>
+<option value="มหาสารคาม">สถานีขนส่งผู้โดยสาร จ.มหาสารคาม"</option>
+<option value="มหาสารคาม">จุดจอดบ้านโพน"</option>
+<option value="มหาสารคาม">จุดจอด อ.เชียงยืน"</option> 
+<option value="มหาสารคาม">จุดจอดบ้านเขื่อน"</option>
+<option value="มหาสารคาม">อ.เชียงยืน"</option>
+<option value="มหาสารคาม">จุดจอด อ.พยัคฆภูมิพิสัย"</option>
+<option value="มหาสารคาม">จุดจอด อ.วาปีปทุม"</option>
+<option value="มุกดาหาร">สถานีขนส่งผู้โดยสาร จ.มุกดาหาร"; 
+<option value="มุกดาหาร">จุดจอด อ.คำชะอี"; 
+<option value="มุกดาหาร">จุดจอด อ.นิคมคำสร้อย"</option>
+<option value="มุกดาหาร">จุดจอดบ้านสามขา"</option> 
+<option value="มุกดาหาร">จุดจอด ต.คำป่าหลาย"</option>
+<option value="มุกดาหาร">จุดจอด อ.หนองสูง"</option> 
+<option value="มุกดาหาร">จุดจอดดงมัน"</option> 
+<option value="มุกดาหาร">จุดจอดคำอาฮวน"</option> 
+<option value="มุกดาหาร">จุดจอดดอนสวรรค์"</option> 
+ 
+ 
+                          </select>
+                        </div>					  </td>
+                    </tr>
+                    <tr>
+                      <td height="15" align="left"><hr width="100%"></td>
+                    </tr>
+            </table>
+	    				
+          <table width="200" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="left" height="20" colspan="2"><span>วันที่ออกเดินทาง:</span></td>
+                      </tr>
+                          <tr>
+                            <td align="left" colspan="2">
+  <div align="left">
+    <select name="departdate" id="departdate" style="font-family:Tahoma;font-size:12px;">
+      <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option selected="selected" value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>      </select>
+    <select name="departmonth" id="departmonth" style="font-family:Tahoma;font-size:12px;">
+       <option value='01/2019'>มกราคม 2562</option><option value='02/2019'>กุมภาพันธ์ 2562</option><option value='03/2019'>มีนาคม 2562</option><option value='04/2019'>เมษายน 2562</option> <option value='05/2019'>พฤษภาคม 2562</option> <option value='06/2019'>มิถุนายน 2562</option> <option value='07/2019'>กรกฎาคม 2562</option> <option value='08/2019'>สิงหาคม 2562</option><option value='09/2019'>กันยายน 2562</option><option value='10/2019'>ตุลาคม 2562</option><option value='11/2019'>พฤศจิกายน 2562</option><option value='12/2019'>ธันวาคม 2562</option>         </select>
+    &nbsp;</div>  </td>
+                    </tr>
+                          <tr>
+                            <td align="left" height="20" colspan="2"><span>วันที่เดินทางกลับ:</span></td>
+                      </tr>
+                          <tr>
+                            <td align="left" colspan="2">
+  <div align="left">
+    <select name="arrivedate" id="arrivedate" style="font-family:Tahoma;font-size:12px;">
+      <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option selected="selected" value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>  
+      </select>
+    <select name="arrivemonth" id="arrivemonth" style="font-family:Tahoma;font-size:12px;">
+      <option value='01/2019'>มกราคม 2562</option><option value='02/2019'>กุมภาพันธ์ 2562</option><option value='03/2019'>มีนาคม 2562</option><option value='04/2019'>เมษายน 2562</option> <option value='05/2019'>พฤษภาคม 2562</option> <option value='06/2019'>มิถุนายน 2562</option> <option value='07/2019'>กรกฎาคม 2562</option> <option value='08/2019'>สิงหาคม 2562</option><option value='09/2019'>กันยายน 2562</option><option value='10/2019'>ตุลาคม 2562</option><option value='11/2019'>พฤศจิกายน 2562</option><option value='12/2019'>ธันวาคม 2562</option>   
+      </select>
+    &nbsp;</div>					  </td>
+                    </tr>
+                          <tr>
+                            <td colspan="2" align="left"></td>
+                      </tr>
+          </table>
+          <table width="200" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td height="30" align="left"><hr width="100%">
+                        <div align="center">
+                          <input type="submit" name="Submit" value="  ค้นหาเที่ยวรถ  " style="font-family:Tahoma;font-size:13px;">                      
+                      </div></td>
+                    </tr>
+            </table>
+                
+				  
+      </form></div>
+    </div>
+    
+    <div class="w3-col l4">
+      <!-- About Card --><!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-orange">
+          <h4>เส้นทางแนะนำ</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16"><span class="w3-large">กรุงเทพ-ขอนแก่น</span>
+            <br>
+           
+          </li>
+          <li class="w3-padding-16"><span class="w3-large">กรุงเทพ-ลำปาง</span>
+            <br>
+   </li>
+                 <li class="w3-padding-16"><span class="w3-large">กรุงเทพ-เชียงใหม่</span>
+            <br>
+                 <li class="w3-padding-16"><span class="w3-large">กรุงเทพ-กระบี่</span>
+            <br>
+          </li>
+          
+               <li class="w3-padding-16"><span class="w3-large">กรุงเทพ-ภูเก็ต</span>
+            <br>
+          </li>
+          </li>
+            <li class="w3-padding-16"><span class="w3-large">กรุงเทพ-พังงา</span>
+            <br>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Advertising --><!-- Tags --><!-- Inspiration --><!-- Subscribe --><!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">เส้นทางแนะนำ</button>
+    </div>
+  </div>
+</div>
+<div class="w3-content" style="max-width:1532px;">
+  <div class="w3-row-padding w3-padding-16 w3-text-white w3-large">
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-display-container"> <a href="file:///C:/Users/sunie/OneDrive/เดสก์ท็อป/pjeastticket/travel.html"><img src="image/จุดชมวิวหินช้างสี ขอนแก่น.jpg" class="w3-hover-opacity" alt="Cinque Terre" style="width:100%"></a>
+        <span class="w3-display-bottomleft w3-padding">จุดชมวิวหินช้างสี ขอนแก่น</span>
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container"> <a href="file:///C:/Users/sunie/OneDrive/เดสก์ท็อป/pjeastticket/travel.html"><img src="image/วัดพระเจดีย์ซาวหลัง ลำปาง.jpg" class="w3-hover-opacity alt="New York" style="width:100%"></a>
+            <span class="w3-display-bottomleft w3-padding">วัดพระเจดีย์ซาวหลัง ลำปาง</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container"> <a href="file:///C:/Users/sunie/OneDrive/เดสก์ท็อป/pjeastticket/travel.html"><img src="image/หาดถ้ำพระนาง กระบี่.jpg" class="w3-hover-opacity alt="San Francisco" style="width:100%"></a>
+            <span class="w3-display-bottomleft w3-padding">หาดถ้ำพระนาง กระบี่</span>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container"> <a href="file:///C:/Users/sunie/OneDrive/เดสก์ท็อป/pjeastticket/travel.html"><img src="image/วัดบ้านเด่นสะหลีศรีเมืองแกน.jpg" class="w3-hover-opacity alt="Pisa" style="width:100%"></a>
+            <span class="w3-display-bottomleft w3-padding">วัดบ้านเด่นสะหลีศรีเมืองแกน เชียงใหม่</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container"> <a href="file:///C:/Users/sunie/OneDrive/เดสก์ท็อป/pjeastticket/travel.html"><img src="image/พระพุทธมิ่งมลคลเอกนาคคีรี ภูเก็ต.jpg" class="w3-hover-opacity alt="Paris" style="width:100%"></a>
+            <span class="w3-display-bottomleft w3-padding">พระพุทธมิ่งมลคลเอกนาคคีรี ภูเก็ต</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+	
+	<footer class="w3-center w3-black w3-padding-16">
+  <p>© 2019 THE DEVELOPMENT OF BUS TICKET COMPARISON APPLICATION WEB ALL RIGHTS RESERVE</p>
+</footer>
+
+</html>
