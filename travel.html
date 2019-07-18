@@ -12,12 +12,10 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.topnav {
+	.topnav {
   overflow: hidden;
   background-color: #333;
 }
-
 .topnav a {
   float: left;
   display: block;
@@ -28,12 +26,7 @@ body {
   font-size: 17px;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
+.active {
   background-color: #ed502d;
   color: white;
 }
@@ -42,8 +35,58 @@ body {
   display: none;
 }
 
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -62,6 +105,13 @@ body {
     display: block;
     text-align: left;
   }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
 	h3 {
   color: orangered;}
@@ -72,19 +122,35 @@ body,td,th {
 	font-family: "th SarabunPSK";
 	font-size: 20px;
 	font-weight: bold;}
-
 </style>
 <body class="w3-light-gray">
 
 <div class="topnav" id="myTopnav">
-  <a href="https://poorinutbutn.github.io/tickettest/BUSTICKETCOMPARISON.html" class="active">หน้าแรก</a>
-  <a href="http://home.transport.co.th/index.php/en/2014-12-16-07-11-38/%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B8%A3%E0%B8%96.html">มาตรฐานรถ</a>
-  <a href="https://poorinutbutn.github.io/tickettest/travel.html">สถานที่ท่องเที่ยวแนะนำ</a>
-  <a href="https://www.agoda.com/?pcs=1&cid=1824618&hl=en">จัดหาสถานที่พัก</a>
-  <a href="https://www.rentalcars.com/?affiliateCode=google&preflang=th&label=generic-LiDGYbEJ9my5X9cgc_JrmwS244489991189&ws=&ppc_placement=&ppc_target=&ppc_param1=&ppc_param2=&aceid=&adposition=1t1&ppc_network=g&feeditemid=&ppc_targetid=aud-96343247783:kwd-23636446669&loc_physical_ms=9074489&loc_interest_ms=&ppc_device=c&ppc_devicemodel=&gclid=Cj0KCQjw3uboBRDCARIsAO2XcYDV3XJN8n-Q17QlgdJ53qpABQIczZLCApZrg90foJ2YwvBwUfid_LYaAtoSEALw_wcB">จัดดหารถเช่า</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+  <a href="#home" class="active">หน้าหลัก</a>
+  <a href="#news">มาตรฐานรถทัวร์</a>
+  <a href="#contact">สถานที่ท่องเที่ยวแนะนำ</a>
+  <a href="#contact">แผนที่เดินรถ</a>
+  <div class="dropdown">
+    <button class="dropbtn">จัดหาเช่ารถยนต์
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://www.rentalcars.com/">rentalcars</a>
+      <a href="http://www.ttanddgroup.com">ttanddgroup</a>
+      <a href="https://www.skyscanner.co.th">skyscanner</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">จัดหาสถานที่พัก
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://www.trivago.co.th">trivago</a>
+      <a href="https://www.agoda.com">agoda</a>
+      <a href="https://www.booking.com">booking</a>
+    </div>
+  </div> 
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
 <script>
@@ -116,42 +182,50 @@ and is wrapped around the whole page content, except for the footer in this exam
 	
   <!-- First Photo Grid-->
 <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-<div class="w3-quarter"> <a href="https://booking.busticket.in.th/index.php"><img src="image/พระพุทธมิ่งมลคลเอกนาคคีรี ภูเก็ต.jpg" class="w3-hover-opacity" alt="Sandwich" style="width:100%"></a>
+<div class="w3-quarter"> <img src="image/พระพุทธมิ่งมลคลเอกนาคคีรี ภูเก็ต.jpg" class="w3-hover-opacity" alt="Sandwich" style="width:100%"></a>
       <h3>พระพุทธมิ่งมงคลเอกนาคคีรี ภูเก็ต</h3>
-      <p> พระพุทธรูปประจำเมืองภูเก็ต เป็นพระพุทธรูปสีขาวขนาดใหญ่ที่ประดิษฐาน ณ บนยอดเขานาคเกิด ภูเขาสูงในเขตป่าสงวนแห่งชาติเขานาคเกิด ตำบลกะรน อำเภอเมือง จังหวัดภูเก็ต</p>
+      <p> พระพุทธรูปประจำเมืองภูเก็ต เป็นพระพุทธรูปสีขาวขนาดใหญ่ที่ประดิษฐาน ณ บนยอดเขานาคเกิด ภูเขาสูงในเขตป่าสงวนแห่งชาติเขานาคเกิด ตำบลกะรน อำเภอเมือง จังหวัดภูเก็ต </p>
+	<p><span class="w3-tag w3-hover-red"><a href="https://booking.busticket.in.th/index.php">จองเลยคลิก</span></p>
   </div>
-<div class="w3-quarter"> <a href="https://booking.busticket.in.th/availabletrip.php"><img src="image/หาดถ้ำพระนาง กระบี่.jpg" class="w3-hover-opacity" alt="Steak" style="width:100%"></a>
+<div class="w3-quarter"><img src="image/หาดถ้ำพระนาง กระบี่.jpg" class="w3-hover-opacity" alt="Steak" style="width:100%"></a>
       <h3>หาดถ้ำพระนาง กระบี่</h3>
-      <p>หาดถ้ำพระนาง หรือ อ่าวถ้ำพระนาง เป็นชายหาดที่สวยงามของจังหวัดกระบี่ มีวิวภูเขาหินปูน และ หน้าผา เดินไปสุดทางจะเจอกับถ้ำที่รายล้อมด้วยทรายขาวและน้ำทะเลใส </p>
+      <p>หาดถ้ำพระนาง หรือ อ่าวถ้ำพระนาง เป็นชายหาดที่สวยงามของจังหวัดกระบี่ มีวิวภูเขาหินปูน และ หน้าผา เดินไปสุดทางจะเจอกับถ้ำที่รายล้อมด้วยทรายขาวและน้ำทะเลใส</p>
+	<p><span class="w3-tag w3-hover-red"><a href="https://booking.busticket.in.th/index.php">จองเลยคลิก</span></p>
 </div>
-<div class="w3-quarter"> <a href="https://booking.busticket.in.th/availabletrip.php"><img src="image/สระมรกต กระบี่.jpg" class="w3-hover-opacity" alt="Cherries" style="width:100%"></a>
+<div class="w3-quarter"> <img src="image/สระมรกต กระบี่.jpg" class="w3-hover-opacity" alt="Cherries" style="width:100%"></a>
       <h3>สระมรกต จังหวัดกระบี่</h3>
       <p>ตั้งอยู่บริเวณป่าทุ่งเตียว ซึ่งจัดเป็นป่าที่ราบต่ำผืนสุดท้ายของประเทศไทย ที่มีพืชพรรณและสัตว์ป่าบางชนิดอาศัยอยู่ในป่านี้เท่านั้น เช่น นกแต้วแล้วท้องดำ</p>
+	<p><span class="w3-tag w3-hover-red"><a href="https://booking.busticket.in.th/index.php">จองเลยคลิก</span></p>
       
 </div>
- <div class="w3-quarter"> <a href="https://booking.busticket.in.th/availabletrip.php"><img src="image/คลองสังเน่ห์ พังงา.jpg" class="w3-hover-opacity" alt="Cherries" style="width:100%"></a>
+ <div class="w3-quarter"> <img src="image/คลองสังเน่ห์ พังงา.jpg" class="w3-hover-opacity" alt="Cherries" style="width:100%"></a>
       <h3>คลองสังเน่ห์ พังงา</h3>
       <p>ตั้งอยู่ที่ตำบลบางนายสี อำเภอตะกั่วป่า มีลักษณะเป็นคลองสายสั้น ๆ ล้อมรอบด้วยผืนป่าเล็ก ๆ ที่สมบูรณ์พร้อมด้วยธรรมชาติ ไฮไลท์อยู่ที่นักท่องเที่ยวจะได้ล่องเรือชมต้นไทรโบราณ อายุร่วมร้อยปี ที่แผ่กิ่งก้านสาขาให้ร่มเงา</p>
+	 <p><span class="w3-tag w3-hover-red"><a href="https://booking.busticket.in.th/index.php">จองเลยคลิก</span></p>
    
 </div>
   
   <!-- Second Photo Grid-->
 <div class="w3-row-padding w3-padding-16 w3-center">
-<div class="w3-quarter"> <a href="https://booking.busticket.in.th/index.php"><img src="image/วัดบ้านเด่นสะหลีศรีเมืองแกน.jpg" class="w3-hover-opacity" alt="Popsicle" style="width:100%"></a>
+<div class="w3-quarter"> <img src="image/วัดบ้านเด่นสะหลีศรีเมืองแกน.jpg" class="w3-hover-opacity" alt="Popsicle" style="width:100%"></a>
       <h3>วัดบ้านเด่นสะหรีศรีเมืองแกน เชียงใหม่ </h3>
-      <p> ตั้งอยู่ที่ ต.อินทขิล อ.แม่แตง จ.เชียงใหม่ เป็นวัดที่ขึ้นชื่อมากในย่านอำเภอแม่แตง และขึ้นชื่อในหมู่ศรัทธาชาวพุทธ ที่ใครๆ ก็ต่างต้องแวะมาเยื่อน </p>
+      <p> ตั้งอยู่ที่ ต.อินทขิล อ.แม่แตง จ.เชียงใหม่ เป็นวัดที่ขึ้นชื่อมากในย่านอำเภอแม่แตง และขึ้นชื่อในหมู่ศรัทธาชาวพุทธ ที่ใครๆ ก็ต่างต้องแวะมาเยื่อน</p>
+	<p><span class="w3-tag w3-hover-red"><a href="https://booking.busticket.in.th/index.php">จองเลยคลิก</span></p>
   </div>
-<div class="w3-quarter"> <a href="https://booking.busticket.in.th/index.php"><img src="image/wat-phra-that-doi-suthep-chiang-mai.jpg" class="w3-hover-opacity" alt="Salmon" style="width:100%"></a>
+<div class="w3-quarter"> <img src="image/wat-phra-that-doi-suthep-chiang-mai.jpg" class="w3-hover-opacity" alt="Salmon" style="width:100%"></a>
       <h3>วัดพระธาตุดอยสุเทพ เชียงใหม่</h3>
       <p>ตั้งอยู่บนยอดดอยสุเทพห่างจากตัวเมืองเชียงใหม่ไปทางทิศตะวันตกประมาณ 14 กิโลเมตร อยู่สูงเหนือระดับน้ำทะเล 1,053 เมตร อยู่ในเขตตำบลสุเทพ อำเภอเมือง จังหวัดเชียงใหม่</p>
+	<p><span class="w3-tag w3-hover-red"><a href="https://booking.busticket.in.th/index.php">จองเลยคลิก</span></p>
   </div>
-    <div class="w3-quarter"> <a href="https://booking.busticket.in.th/availabletrip.php"><img src="image/วัดพระเจดีย์ซาวหลัง ลำปาง.jpg"  class="w3-hover-opacity" alt="Sandwich" style="width:100%"></a>
+    <div class="w3-quarter"> <img src="image/วัดพระเจดีย์ซาวหลัง ลำปาง.jpg"  class="w3-hover-opacity" alt="Sandwich" style="width:100%"></a>
       <h3>วัดพระเจดีย์ซาวหลัง ลำปาง</h3>
       <p>ตั้งอยู่ที่บ้านวังหม้อ ตำบลต้นธงชัย อำเภอเมือง จังหวัดลำปาง ลักษณะการก่อสร้างเป็นศิลปะแบบพม่าผสมศิลปะล้านนา องค์ใหญ่สุดอยู่ตรงกลาง แวดล้อมด้วยเจดีย์อีกสิบเก้าองค์ รวมกันแล้วเป็นยี่สิบองค์</p>
+		<p><span class="w3-tag w3-hover-red"><a href="https://booking.busticket.in.th/index.php">จองเลยคลิก</span></p>
 </div>
-	<div class="w3-quarter"> <a href="https://booking.busticket.in.th/availabletrip.php"><img src="image/วนอุทยานน้ำตกบ๋าหลวง ขอนแก่น.jpg" class="w3-hover-opacity" alt="Cherries" style="width:100%"></a>
+	<div class="w3-quarter"> <img src="image/วนอุทยานน้ำตกบ๋าหลวง ขอนแก่น.jpg" class="w3-hover-opacity" alt="Cherries" style="width:100%"></a>
       <h3>วนอุทยานน้ำตกบ๋าหลวง ขอนแก่น</h3>
       <p> อยู่ในพื้นที่ป่าสงวนแห่งชาติป่าดงมูล หนึ่งในสถานที่ท่องเที่ยวที่น่าสนใจ คือ น้ำตกบ๋าหลวง มีจุดให้นักท่องเที่ยวพักผ่อนหย่อนใจด้วยกัน 3 จุด จุดแรก"น้ำตกบ๋าหลวง" จุดที่สองชื่อว่า"น้ำย้อย" จุดที่สามชื่อว่า "อ่างนางลอย"
+		<p><span class="w3-tag w3-hover-red"><a href="https://booking.busticket.in.th/index.php">จองเลยคลิก</span></p>
 </p>
       
 </div>
@@ -160,9 +234,7 @@ and is wrapped around the whole page content, except for the footer in this exam
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
       <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
     </div>
   </div>
 	
