@@ -147,10 +147,10 @@ body,td,th {
 
 <body class="w3-light-gray">
 <div class="topnav" id="myTopnav">
-  <a href="BUSTICKETCOMPARISON.html" class="active">หน้าหลัก</a>
-  <a href="carstandard.html">มาตรฐานรถทัวร์</a>
-  <a href="travel.html">สถานที่ท่องเที่ยวแนะนำ</a>
-  <a href="map.html">แผนที่เดินรถ</a>
+  <a href="#home" class="active">หน้าหลัก</a>
+  <a href="#news">มาตรฐานรถทัวร์</a>
+  <a href="#contact">สถานที่ท่องเที่ยวแนะนำ</a>
+  <a href="#contact">แผนที่เดินรถ</a>
   <div class="dropdown">
     <button class="dropbtn">จัดหาเช่ารถยนต์
       <i class="fa fa-caret-down"></i>
@@ -186,8 +186,8 @@ function myFunction() {
 </script>
 <body>
 	<header class="w3-container w3-center w3-padding-48 w3-white">
-    <h1 class="w3-xxxlarge"><b></b>THE DEVELOPMENT OF BUS TICKET COMPARISON</h1>
-    <h6>เว็บไซต์บริการเปรียบเทียบ<span class="w3-tag">ราคาตั๋วรถทัวร์ </span></h6>
+	  <h1 class="w3-xxxlarge"><strong></strong>THE DEVELOPMENT OF BUS TICKET COMPARISON</h1>
+	  <h6>เว็บไซต์บริการเปรียบเทียบ<span class="w3-tag">ราคาตั๋วรถทัวร์ </span></h6>
   </header>
 <!-- Navbar on small screens --><!-- Page content -->
 
@@ -197,69 +197,38 @@ function myFunction() {
   
 	 <div class="w3-panel w3-border w3-border-red">
 <p>	
-<img src="https://booking.busticket.in.th/img/bus-go.png" alt=""> วันรถออก จันทร์, 22 เมษายน 2562 </p>
-<p>		จาก เชียงใหม่ [ สถานีขนส่งผู้โดยสาร จ.เชียงใหม่ (อาเขต) ] ถึง กรุงเทพมหานคร [ สถานีขนส่งผู้โดยสารกรุงเทพฯ (หมอชิต 2) ]</p>
+<img src="https://booking.busticket.in.th/img/bus-go.png" alt=""> 
 <div style="overflow-x:auto;">
 <table id="customers">
   <tr>
-   <th>บริษัท</th>
-   <th>จุดออกรถ</th>
+   <th>จุดขึ้นรถ</th>
+   <th>เวลารถออก</th>
     <th>เวลารถออก</th>
-    <th>เวลาถึง</th>
-       <th>มาตราฐาน</th>
        <th>ราคา</th>
-       <th></th>
+       <th>บริษัท</th>
   </tr>
   <tr>
-    <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-    <td><a href="https://www.busticket.in.th/?gclid=CjwKCAjwzPXlBRAjEiwAj_XTEa2wOQ6I0qazPnZQfgWazl4XrQEuIOKTwP0w8p-pjErbJjAVx9jTghoCEK0QAvD_BwE">เลือก</a></td>
+    <td>'+table.terminal+'</td>
+   <td>'+table.timeout+'</td>
+   <td>'+table.standard+'</td>
+	<td>'+table.price+'</td>
+    <td><a href = "https://www.busticket.in.th/">'+table.company+'</a></td>
   </tr>
     <tr>
-    <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-
-    <td><a href="https://www.busticket.in.th/?gclid=CjwKCAjwzPXlBRAjEiwAj_XTEa2wOQ6I0qazPnZQfgWazl4XrQEuIOKTwP0w8p-pjErbJjAVx9jTghoCEK0QAvD_BwE">เลือก</a></td>
+    <td>'+table1.terminal+'</td>
+   <td>'+table1.timeout+'</td>
+   <td>'+table1.standard+'</td>
+  <td>'+table1.price+'</td>
+    <td><a href = "https://www.busticket.in.th/">'+table1.company+'</a></td>
   </tr>
     <tr>
-    <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-
-    <td><a href="https://www.busticket.in.th/?gclid=CjwKCAjwzPXlBRAjEiwAj_XTEa2wOQ6I0qazPnZQfgWazl4XrQEuIOKTwP0w8p-pjErbJjAVx9jTghoCEK0QAvD_BwE">เลือก</a></td>
+    <td>'+table2.terminal+'</td>
+   <td>'+table2.timeout+'</td>
+   <td>'+table2.standard+'</td>
+   <td>'+table2.price+'</td>
+	<td><a href = "https://www.busticket.in.th/">'+table2.company+'</a></td>
   </tr>
-     <tr>
-    <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-
-    <td><a href="https://www.busticket.in.th/?gclid=CjwKCAjwzPXlBRAjEiwAj_XTEa2wOQ6I0qazPnZQfgWazl4XrQEuIOKTwP0w8p-pjErbJjAVx9jTghoCEK0QAvD_BwE">เลือก</a></td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-   <td> </td>
-
-    <td><a href="https://www.sombattour.com/">เลือก</a></td>
-  </tr>
- 
+    
 
 </table>
   </div></p>
