@@ -125,13 +125,15 @@
                 console.log('create');
                 curMarker = new google.maps.Marker({
                     position: curLocation,
-                    map: map
+                    map: map,
+			title : "User"
                 });
 
                 marker = new google.maps.Marker({
                     position: targetLocation,
                     // icon : imgCar,
-                    map: map
+                    map: map,
+			title : "Module"
                 });
 		    map.setCenter(curLocation);
             } else {
