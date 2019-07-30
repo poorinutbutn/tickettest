@@ -133,6 +133,7 @@
                     // icon : imgCar,
                     map: map
                 });
+		    map.setCenter(curLocation);
             } else {
                 console.log('Move');
                 marker.setPosition(new google.maps.LatLng( targetLocation.lat, targetLocation.lng ))
@@ -146,7 +147,7 @@
             document.getElementById('display').innerHTML = dis.toFixed(2) + ' Kilometer';
             document.getElementById('time').innerHTML = 'Average: ' + time.toFixed(2) + ' Minutes';
 
-            map.setCenter(curLocation);
+//             map.setCenter(curLocation);
         }
 
         function getNowLocarion() {
