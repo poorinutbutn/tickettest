@@ -137,7 +137,7 @@
                 console.log('Move');
                 marker.setPosition(new google.maps.LatLng( targetLocation.lat, targetLocation.lng ))
                 curMarker.setPosition(new google.maps.LatLng( curLocation.lat, curLocation.lng ))
-                map.panTo( new google.maps.LatLng( targetLocation.lat, targetLocation.lng ) );
+                //map.panTo( new google.maps.LatLng( targetLocation.lat, targetLocation.lng ) );
 
             }
             const dis = this.distance(curLocation.lat, curLocation.lng, targetLocation.lat, targetLocation.lng,
@@ -206,7 +206,7 @@
                 if (unit == "N") {
                     dist = dist * 0.8684
                 }
-                minute = ( dist / 80 ) * 60;
+                minute = ( dist / 30 ) * 60;
                 return dist;
             }
         }
